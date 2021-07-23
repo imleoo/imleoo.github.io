@@ -48,7 +48,7 @@ end
 1.  This is an ordered list following a header.
 2.  This is an ordered list following a header.
 3.  This is an ordered list following a header.
-
+4.  How to do the things.
 ###### Header 6
 
 | head1        | head two          | three |
