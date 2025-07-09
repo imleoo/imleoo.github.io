@@ -1,123 +1,58 @@
 ---
 layout: default
+title: About Leoo Bai
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Leoo Bai (白德鑫)
 
-[Link to another page](./docs/营销理论梳理.html).
+## 👋 Introduction
 
-There should be whitespace between paragraphs.
+Founder of [Aiseo](https://aiseo.icu), a startup building next-generation AI-powered SEO and multilingual digital marketing infrastructure.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## 🔍 Professional Focus
 
-# Header 1
+- **AI-Driven Content**: Automated content generation and optimization
+- **SEO Innovation**: Programmatic landing pages and data-informed strategies
+- **Global Scaling**: Helping brands expand organically through AI
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+## 🌱 Current Work: AI Optimization (AIO)
 
-## Header 2
+Pioneering AIO - an evolution beyond traditional SEO - to enhance content discoverability by:
+- Users
+- AI summarization engines (SGE, GPT-based agents)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## 🤝 Collaboration Interests
 
-### Header 3
+Seeking partnerships with teams in:
+1. AI Content Generation
+2. MarTech SaaS Solutions
+3. Cross-border E-commerce
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+Special interest in:
+- Multilingual AI applications
+- LLM-enhanced marketing
+- Programmatic content deployment
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+## 📫 Contact
 
-#### Header 4
+- Email: [leoo@leoobai.cn](mailto:leoo@leoobai.cn)
+- GitHub: [@imleoo](https://github.com/imleoo)
+- Twitter: [@imleoo](https://twitter.com/imleoo)
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+---
 
-##### Header 5
+## About Aiseo
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-4.  How to do the things.
-###### Header 6
+### 🚀 Platform Overview
+AI-powered marketing platform for Chinese businesses going global, enabling:
+- One-click website generation
+- Multilingual SEO optimization
+- Human-like content rewriting (Humanizer)
+- Automated landing pages
+- Smart article generation
+- Social media distribution
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+### 🎯 Mission
+Empower businesses to grow organic traffic and brand visibility beyond paid ads.
 
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+[Visit Aiseo](https://aiseo.icu)
