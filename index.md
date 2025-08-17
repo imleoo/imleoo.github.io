@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: home
 title: Leoo Bai
-permalink: /
 ---
 
 # Leoo Bai (白德鑫)
@@ -16,7 +15,7 @@ permalink: /
 
 💞️ I'm looking to collaborate with forward-thinking teams in AI content, MarTech SaaS, and cross-border e-commerce, especially those exploring multilingual AI, LLM-enhanced marketing, or programmatic content deployment.
 
-📧 Reach me at [imleoo@gmail.com](mailto:imleoo@gmail.com) or connect with me on [GitHub](https://github.com/imleoo) / [Twitter](https://twitter.com/imleoo) @imleoo.
+📧 Reach me at [imleoo@gmail.com](mailto:imleoo@gmail.com) or connect with me on [GitHub](https://github.com/imleoo) / [Twitter](https://twitter.com/leoobai) @leoobai.
 
 ---
 
