@@ -1,10 +1,10 @@
 title: Leoo Bai
-description: AI SEO Specialist | Founder of Aiseo.icu
+description: Senior Technology Executive & AI Specialist | 10+ years in Big Data, Video Streaming, Cloud Computing & AI
 show_downloads: false
 google_analytics:
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
 cayman-theme:
-  project_name: "Leoo Bai"
-  project_tagline: "AI SEO Specialist & Entrepreneur"
+  project_name: "白德鑫 Leoo Bai"
+  project_tagline: "Senior Technology Executive & AI Specialist"
