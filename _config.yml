@@ -1,5 +1,5 @@
 title: Leoo Bai
-description: AI SEO & Tax Trade Specialist | Founder of Aiseo.icu
+description: AI SEO Specialist | Founder of Aiseo.icu
 show_downloads: false
 google_analytics:
 remote_theme: pages-themes/cayman@v0.2.0
@@ -7,4 +7,4 @@ plugins:
   - jekyll-remote-theme
 cayman-theme:
   project_name: "Leoo Bai"
-  project_tagline: "AI SEO & Tax Trade Specialist"
+  project_tagline: "AI SEO Specialist & Entrepreneur"

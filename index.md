@@ -10,7 +10,7 @@ I'm passionate about:
 - **AI-Driven Content Generation** & Automated SEO
 - **Programmatic Landing Pages** & Data-Informed Marketing
 - **AI Optimization (AIO)** - Beyond traditional SEO
-- **International Tax Trade** Services & Solutions
+- **Multilingual Digital Marketing** & Global Brand Strategy
 
 ## 🚀 Current Projects
 
@@ -32,8 +32,8 @@ I'm currently pioneering AIO - an evolution beyond traditional SEO - to help con
 
 - **AI Content Strategy**: Automated content generation and optimization
 - **Global Marketing**: Helping brands scale organically through AI
-- **Tax Trade Services**: Specializing in international business tax solutions
 - **Cross-border E-commerce**: Multilingual AI applications
+- **Data-Driven SEO**: Advanced analytics and performance optimization
 
 ## 🤝 Collaboration
 
