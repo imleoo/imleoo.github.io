@@ -131,7 +131,7 @@ layout: home
   </div>
   
   <div class="blog-grid">
-    {% for post in site.posts | slice: 0,3 %}
+    {% for post in site.posts limit: 3 %}
     <div class="blog-card">
       <div class="blog-card-image">
         <span>📝</span>
