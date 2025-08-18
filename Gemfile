@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
-gem "minimal-mistakes-jekyll"
-gem "jekyll-remote-theme"
+gem "minima"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
 gem "jekyll-gist"
