@@ -157,7 +157,7 @@ I'd love to feature your insights or collaborate on content.
 }
 
 .category {
-  background: #007bff;
+  background: #009e9f;
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
@@ -172,7 +172,7 @@ I'd love to feature your insights or collaborate on content.
 }
 
 .read-more {
-  color: #007bff;
+  color: #009e9f;
   text-decoration: none;
   font-weight: 500;
 }

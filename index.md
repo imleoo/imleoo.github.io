@@ -10,7 +10,7 @@ layout: home
     <p class="hero-description">Founder of AiSEO.icu | 10+ years in AI, Big Data & Cloud Computing</p>
     <div class="hero-buttons">
       <a href="#contact" class="btn-primary">Get In Touch</a>
-      <a href="#experience" class="btn-secondary">View Experience</a>
+      <a href="/experience/" class="btn-secondary">View Experience</a>
     </div>
   </div>
 </div>
@@ -173,7 +173,7 @@ layout: home
     <div class="contact-item">
       <div class="contact-icon">📧</div>
       <h3>Email</h3>
-      <a href="mailto:baidexin@outlook.com">baidexin@outlook.com</a>
+      <a href="mailto:imleoo@gmail.com">imleoo@gmail.com</a>
     </div>
   </div>
 </div>
