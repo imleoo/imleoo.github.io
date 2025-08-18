@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: home
+author_profile: true
 ---
 
 # 白德鑫 Leoo Bai
@@ -7,15 +8,6 @@ layout: default
 ## Senior Technology Executive & AI Specialist
 
 Founder of [AiSEO.icu](https://aiseo.icu/) — 10+ years of experience in internet R&D management with expertise in big data, video streaming, cloud computing, and artificial intelligence.
-
----
-
-## Navigation
-- [About](about.html)
-- [Experience](experience.html)
-- [Projects](projects.html)
-- [Blog](blog.html)
-- [Contact](contact.html)
 
 ## About
 
