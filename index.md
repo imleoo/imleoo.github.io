@@ -10,7 +10,19 @@ Founder of [AiSEO.icu](https://aiseo.icu/) — 10+ years of experience in intern
 
 ---
 
+## Navigation
+- [About](about.html)
+- [Experience](experience.html)
+- [Projects](projects.html)
+- [Blog](blog.html)
+- [Contact](contact.html)
+
 ## About
+
+## Latest Blog Posts
+{% for post in site.posts | slice: 0,5 %}
+- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%Y-%m-%d" }}
+{% endfor %}
 
 Hi, I'm **白德鑫 (Leoo Bai)**, a seasoned technology executive with extensive experience leading technical teams and building innovative solutions across multiple industries. My journey spans over a decade in internet technology, with deep expertise in:
 
