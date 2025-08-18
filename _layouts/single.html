@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+<div class="page" itemprop="mainContentOfPage">
+  {{ content }}
+</div>
+
+<style>
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.page h1, .page h2, .page h3,
+.page h4, .page h5, .page h6 {
+  color: var(--text-primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.page h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.page h3 {
+  font-size: 1.5rem;
+}
+
+.page p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.page ul, .page ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.page li {
+  margin-bottom: 0.5rem;
+}
+
+.page blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.page code {
+  background: var(--bg-secondary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+}
+
+.page pre {
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.page pre code {
+  background: none;
+  padding: 0;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 1rem;
+  }
+  
+  .page h1 {
+    font-size: 2rem;
+  }
+}
+</style>

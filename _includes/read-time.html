@@ -1,0 +1,13 @@
+<!-- read time -->
+{% assign words = include.content | number_of_words %}
+{% assign read_time = words | divided_by: site.words_per_minute | default: 200 %}
+
+{% if read_time <= 1 %}
+  {% assign read_time_text = "1 min read" %}
+{% else %}
+  {% assign read_time_text = read_time | append: " min read" %}
+{% endif %}
+
+<span class="readtime" title="{{ words }} words">
+  {{ read_time_text }}
+</span>
