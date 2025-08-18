@@ -1,8 +1,8 @@
 ---
-layout: single
+layout: page
 title: "Blog"
 permalink: /blog/
-author_profile: true
+description: "Explore Leoo Bai's blog featuring insights on AI marketing, SEO optimization, entrepreneurship, and the future of digital content in the age of artificial intelligence."
 ---
 
 # Blog

@@ -1,8 +1,8 @@
 ---
-layout: single
+layout: page
 title: "Contact"
 permalink: /contact/
-author_profile: true
+description: "Get in touch with Leoo Bai for business inquiries, collaboration opportunities, consulting services, and professional networking."
 ---
 
 # Get In Touch

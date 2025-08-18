@@ -2,16 +2,176 @@
 layout: default
 ---
 
-<div class="container" style="padding: 4rem 2rem; max-width: 800px; margin: 0 auto;">
-  <h1 style="color: var(--text-primary); margin-bottom: 2rem;">{{ page.title }}</h1>
+<div class="page-container">
+  <div class="page-header">
+    <h1 class="page-title">{{ page.title }}</h1>
+    
+    {% if page.date %}
+      <div class="page-meta">
+        <i class="far fa-calendar"></i> {{ page.date | date: "%B %d, %Y" }}
+      </div>
+    {% endif %}
+    
+    {% if page.description %}
+      <div class="page-description">
+        {{ page.description }}
+      </div>
+    {% endif %}
+  </div>
   
-  {% if page.date %}
-    <div style="color: var(--text-secondary); margin-bottom: 2rem;">
-      <i class="far fa-calendar"></i> {{ page.date | date: "%B %d, %Y" }}
-    </div>
-  {% endif %}
-  
-  <div style="color: var(--text-primary); line-height: 1.8;">
+  <div class="page-content">
     {{ content }}
   </div>
 </div>
+
+<style>
+  .page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--border-color);
+  }
+  
+  .page-title {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .page-meta {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .page-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .page-content {
+    color: var(--text-primary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  
+  .page-content h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .page-content h3 {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .page-content p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  
+  .page-content ul, .page-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+  }
+  
+  .page-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .page-content a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+  
+  .page-content blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  
+  .page-content code {
+    background: var(--bg-secondary);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.9rem;
+  }
+  
+  .page-content pre {
+    background: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+  
+  .page-content pre code {
+    background: none;
+    padding: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .page-container {
+      padding: 1rem;
+    }
+    
+    .page-title {
+      font-size: 2rem;
+    }
+    
+    .page-header {
+      margin-bottom: 2rem;
+      padding: 1rem 0;
+    }
+    
+    .page-content {
+      font-size: 1rem;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
