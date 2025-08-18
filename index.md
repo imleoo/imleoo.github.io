@@ -70,7 +70,7 @@ Building next-generation AI-powered SEO and digital marketing infrastructure for
 
 ### Technical Scale
 - Led systems supporting **130 million+ users**
-- Managed teams of **50+ engineers**
+- Managed teams of **180+ engineers**
 - Built platforms processing **millions of transactions daily**
 
 ### Global Experience
@@ -80,18 +80,8 @@ Building next-generation AI-powered SEO and digital marketing infrastructure for
 
 ---
 
-## Education
+## Connect
 
-- **MBA in Business Administration** | Communication University of China (2016-2018)
-- **Master's in Computer Technology** | Wuhan University (2014-2017)  
-- **Bachelor's in Computer Application** | Zhengzhou University (1994-1998)
-
----
-
-## Contact
-
-**📧 Email:** [baidexin@outlook.com](mailto:baidexin@outlook.com)  
-**📱 Phone:** +86 18515881222  
 **💼 LinkedIn:** [linkedin.com/in/leoo-bai](https://linkedin.com/in/leoo-bai)  
 **💻 GitHub:** [github.com/imleoo](https://github.com/imleoo)  
 **🌐 Website:** [aiseo.icu](https://aiseo.icu)
