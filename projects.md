@@ -1,8 +1,8 @@
 ---
-layout: single
+layout: page
 title: "Projects"
 permalink: /projects/
-author_profile: true
+description: "Discover Leoo Bai's key projects including AI-powered SEO platforms, financial risk modeling systems, large-scale video platforms, and innovative technology solutions."
 ---
 
 # Key Projects & Achievements

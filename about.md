@@ -1,8 +1,8 @@
 ---
-layout: single
+layout: page
 title: "About"
 permalink: /about/
-author_profile: true
+description: "Learn about Leoo Bai's professional journey, leadership philosophy, and expertise in AI, big data, and technology management."
 ---
 
 # About 白德鑫 Leoo Bai

@@ -59,23 +59,44 @@
       z-index: 100;
       backdrop-filter: blur(10px);
       background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid var(--border-color);
     }
     
     body.dark-mode nav {
       background: rgba(26,26,26,0.95);
     }
     
-    nav ul {
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .nav-logo .logo-link {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-logo .logo-link:hover {
+      transform: translateY(-2px);
+      text-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+    }
+    
+    .nav-menu {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
+      gap: 1rem;
+      align-items: center;
     }
     
-    nav a {
+    .nav-menu li a {
       color: var(--text-primary);
       text-decoration: none;
       font-weight: 500;
@@ -83,17 +104,36 @@
       border-radius: 8px;
       transition: all 0.3s ease;
       position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
     
-    nav a:hover {
+    .nav-menu li a:hover {
       background: var(--primary-color);
       color: white;
       transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
     }
     
-    nav a.active {
+    .nav-menu li a.active {
       background: var(--primary-color);
       color: white;
+    }
+    
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 3px;
+    }
+    
+    .nav-toggle span {
+      width: 25px;
+      height: 3px;
+      background: var(--text-primary);
+      transition: all 0.3s ease;
+      border-radius: 2px;
     }
     
     /* Main content */
@@ -107,13 +147,50 @@
         padding: 1rem;
       }
       
-      nav ul {
+      .nav-container {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
       }
       
-      nav a {
+      .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        display: none;
+      }
+      
+      .nav-menu.active {
+        display: flex;
+      }
+      
+      .nav-menu li {
+        width: 100%;
+      }
+      
+      .nav-menu li a {
         text-align: center;
+        padding: 1rem;
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .nav-toggle {
+        display: flex;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+      }
+      
+      .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
       }
     }
   </style>
@@ -123,15 +200,27 @@
 <body>
   <!-- Navigation -->
   <nav>
-    <ul>
-      {% for item in site.navigation.main %}
-        <li>
-          <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>
-            {{ item.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="/" class="logo-link">
+          <span class="logo-text">Leoo Bai</span>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        {% for item in site.navigation.main %}
+          <li>
+            <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </nav>
 
   <!-- Main Content -->
@@ -144,6 +233,21 @@
 
   <!-- Custom JavaScript -->
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  
+  <!-- Mobile Navigation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+          navToggle.classList.toggle('active');
+          navMenu.classList.toggle('active');
+        });
+      }
+    });
+  </script>
   
   <!-- Google Analytics (if configured) -->
   {% if site.google_analytics.id %}

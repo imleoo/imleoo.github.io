@@ -1,8 +1,8 @@
 ---
-layout: single
+layout: page
 title: "Experience"
 permalink: /experience/
-author_profile: true
+description: "Explore Leoo Bai's professional journey including leadership roles at major tech companies, entrepreneurial ventures, and technical expertise in AI, big data, and media technology."
 ---
 
 # Professional Experience
