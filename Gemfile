@@ -13,6 +13,8 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+  gem "jekyll-archives"
   gem "jekyll-gist"
   gem "jekyll-paginate"
   gem "jekyll-include-cache"

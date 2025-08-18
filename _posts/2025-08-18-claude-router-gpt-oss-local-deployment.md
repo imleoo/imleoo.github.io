@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "使用Claude Router搭建本地Claude Code服务，借助GPT-OSS:20B模型每月节省200美金"
 date: 2025-08-18 10:00:00 +0800
 categories: [AI, 技术实践]
