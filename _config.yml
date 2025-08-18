@@ -1,10 +1,12 @@
-title: "Leoo Bai"
+title: "Leoo Bai - AI & Technology Executive"
 title_separator: "-"
 subtitle: "Senior Technology Executive & AI Specialist"
 name: "白德鑫 Leoo Bai"
-description: "Senior Technology Executive & AI Specialist | 10+ years in Big Data, Video Streaming, Cloud Computing & AI"
+description: "AI Specialist & Technology Executive with 10+ years in Big Data, Cloud Computing, and Machine Learning. Founder of AiSEO.icu."
 url: "https://imleoo.github.io"
 baseurl: ""
+lang: "en"
+timezone: "Asia/Shanghai"
 
 # Build settings
 markdown: kramdown
@@ -14,24 +16,69 @@ excerpt_separator: "\n\n"
 incremental: false
 
 # Theme Settings
-theme: minima
+remote_theme: cotes2020/jekyll-theme-chirpy
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-include-cache
+
+# Social
+github_username: imleoo
+linkedin_username: leoo-bai
+twitter_username: leoobai
+
+# Analytics
+google_analytics:
+  id: # Add your GA tracking ID if needed
+
+# Site settings
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Theme settings
+theme_mode: "light"
+repository: imleoo/imleoo.github.io
+
+# Image settings
+avatar: "/assets/images/avatar.png"
+toc: true
+
+# Social sharing
+og_image: "/assets/images/og-image.jpg"
+
+# Default layout
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      author_profile: true
 
 # Navigation Menu
 navigation:
   main:
-    - title: "关于"
+    - title: "🏠 Home"
+      url: /
+    - title: "💼 About"
       url: /about/
-    - title: "经历"
+    - title: "📈 Experience"
       url: /experience/
-    - title: "项目"
+    - title: "🚀 Projects"
       url: /projects/
-    - title: "博客"
+    - title: "📝 Blog"
       url: /blog/
-    - title: "联系"
+    - title: "📞 Contact"
       url: /contact/
 
 # Site Author

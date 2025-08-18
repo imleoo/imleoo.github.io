@@ -1,91 +1,243 @@
 ---
 layout: home
-author_profile: true
 ---
 
-# 白德鑫 Leoo Bai
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">白德鑫 Leoo Bai</h1>
+    <p class="hero-subtitle">Senior Technology Executive & AI Specialist</p>
+    <p class="hero-description">Founder of AiSEO.icu | 10+ years in AI, Big Data & Cloud Computing</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">Get In Touch</a>
+      <a href="#experience" class="btn-secondary">View Experience</a>
+    </div>
+  </div>
+</div>
 
-## Senior Technology Executive & AI Specialist
+<!-- Skills Section -->
+<div class="container" style="padding: 4rem 2rem;">
+  <div class="text-center mb-5">
+    <h2 class="section-title">Core Expertise</h2>
+    <p class="section-subtitle">Specialized in cutting-edge technology domains</p>
+  </div>
+  
+  <div class="skills-container">
+    <div class="skill-tag">🤖 AI & Machine Learning</div>
+    <div class="skill-tag">📊 Big Data Analytics</div>
+    <div class="skill-tag">☁️ Cloud Architecture</div>
+    <div class="skill-tag">🎥 Video Streaming</div>
+    <div class="skill-tag">🛡️ Risk Management</div>
+    <div class="skill-tag">⚡ Real-time Processing</div>
+    <div class="skill-tag">🔍 Predictive Analytics</div>
+    <div class="skill-tag">🌐 CDN Technology</div>
+  </div>
+</div>
 
-Founder of [AiSEO.icu](https://aiseo.icu/) — 10+ years of experience in internet R&D management with expertise in big data, video streaming, cloud computing, and artificial intelligence.
+<!-- Stats Section -->
+<div class="container" style="padding: 2rem 2rem;">
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number">130M+</div>
+      <div class="stat-label">Users Supported</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">180+</div>
+      <div class="stat-label">Engineers Led</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">10+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">95%+</div>
+      <div class="stat-label">Model Accuracy</div>
+    </div>
+  </div>
+</div>
 
-## About
+<!-- Current Focus -->
+<div class="container" style="padding: 4rem 2rem;">
+  <div class="text-center mb-5">
+    <h2 class="section-title">Current Focus</h2>
+    <p class="section-subtitle">Leading innovation in AI-powered solutions</p>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">🚀</div>
+          <h3 class="card-title">AiSEO.icu</h3>
+        </div>
+        <p><strong>Founder & CEO</strong> | 2025 - Present</p>
+        <p>Building next-generation AI-powered SEO and digital marketing infrastructure for global businesses.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">🎯</div>
+          <h3 class="card-title">Technical Excellence</h3>
+        </div>
+        <p>Focusing on scalable AI solutions, cloud architecture optimization, and cutting-edge machine learning applications.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-## Latest Blog Posts
-{% for post in site.posts | slice: 0,5 %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%Y-%m-%d" }}
-{% endfor %}
+<!-- Recent Achievements -->
+<div class="container" style="padding: 4rem 2rem; background: var(--bg-secondary);">
+  <div class="text-center mb-5">
+    <h2 class="section-title">Recent Achievements</h2>
+    <p class="section-subtitle">Delivering impactful technical solutions</p>
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">🏛️</div>
+          <h3 class="card-title">Cross-border Trade Compliance</h3>
+        </div>
+        <ul>
+          <li>95%+ compliance risk identification accuracy</li>
+          <li>Transformer & LSTM algorithms implementation</li>
+          <li>99.93% HS code classification accuracy</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">💰</div>
+          <h3 class="card-title">Financial Risk Modeling</h3>
+        </div>
+        <ul>
+          <li>Trade finance risk models for banking</li>
+          <li>Fraud detection & anti-money laundering</li>
+          <li>Customs data integration for loans</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-Hi, I'm **白德鑫 (Leoo Bai)**, a seasoned technology executive with extensive experience leading technical teams and building innovative solutions across multiple industries. My journey spans over a decade in internet technology, with deep expertise in:
+<!-- Latest Blog Posts -->
+<div class="container" style="padding: 4rem 2rem;">
+  <div class="text-center mb-5">
+    <h2 class="section-title">Latest Insights</h2>
+    <p class="section-subtitle">Sharing knowledge and experiences</p>
+  </div>
+  
+  <div class="blog-grid">
+    {% for post in site.posts | slice: 0,3 %}
+    <div class="blog-card">
+      <div class="blog-card-image">
+        <span>📝</span>
+      </div>
+      <div class="blog-card-content">
+        <h3 class="blog-card-title">{{ post.title }}</h3>
+        <p class="blog-card-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <a href="{{ post.url }}" class="btn-primary" style="margin-top: 1rem;">Read More</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
-- **Artificial Intelligence & Machine Learning**
-- **Big Data Analytics & Mining**
-- **Cloud Computing Architecture**
-- **Video Streaming & Media Technology**
-- **Risk Management & Algorithm Development**
+<!-- Contact Section -->
+<div id="contact" class="container" style="padding: 4rem 2rem;">
+  <div class="text-center mb-5">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-subtitle">Open to collaboration and opportunities</p>
+  </div>
+  
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="contact-icon">💼</div>
+      <h3>LinkedIn</h3>
+      <a href="https://linkedin.com/in/leoo-bai" target="_blank">linkedin.com/in/leoo-bai</a>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">💻</div>
+      <h3>GitHub</h3>
+      <a href="https://github.com/imleoo" target="_blank">github.com/imleoo</a>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">🌐</div>
+      <h3>Website</h3>
+      <a href="https://aiseo.icu" target="_blank">aiseo.icu</a>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📧</div>
+      <h3>Email</h3>
+      <a href="mailto:baidexin@outlook.com">baidexin@outlook.com</a>
+    </div>
+  </div>
+</div>
 
-## Core Expertise
+<!-- Custom Styles -->
+<style>
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-### Technical Leadership
-- **Team Management**: Successfully built and led multiple technical teams
-- **Strategic Planning**: Developed and executed technology roadmaps
-- **Product Development**: Launched multiple successful products from concept to market
-- **Cross-functional Collaboration**: Worked with sales, delivery, and product teams
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
 
-### Technical Domains
-- **AI/ML**: Risk assessment models, natural language processing, predictive analytics
-- **Big Data**: Real-time processing, data mining, user behavior analysis
-- **Cloud Architecture**: Platform design, scalability, performance optimization
-- **Media Technology**: Video streaming, CDN, content management systems
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
 
----
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
 
-## Current Focus
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-### AiSEO.icu
-*Founder & CEO* | *2025 - Present*
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
 
-Building next-generation AI-powered SEO and digital marketing infrastructure for global businesses.
+.row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
-### Recent Technical Achievements
+.col-md-6, .col-lg-6 {
+  flex: 1;
+  min-width: 300px;
+}
 
-**Cross-border Trade Compliance System**
-- Led risk model algorithm development achieving 95%+ compliance risk identification
-- Implemented Transformer and LSTM algorithms for customs tax risk assessment
-- Achieved 99.93% accuracy in HS code classification error detection
-
-**Financial Risk Modeling**
-- Developed trade finance risk models for banking institutions
-- Created systems for identifying false trade, money laundering, and tax fraud risks
-- Integrated customs declaration data for loan approval and foreign exchange settlement
-
----
-
-## Professional Highlights
-
-### Industry Leadership
-- **Tencent Cloud Most Valuable Expert**
-- **TGO (Kunpeng Association) Outstanding Team Leader**
-- **Multiple patents and innovations in AI and media technology**
-
-### Technical Scale
-- Led systems supporting **130 million+ users**
-- Managed teams of **180+ engineers**
-- Built platforms processing **millions of transactions daily**
-
-### Global Experience
-- Worked with Fortune 500 companies
-- Collaborated with international teams across Asia, Europe, and North America
-- Expertise in cross-border technology solutions
-
----
-
-## Connect
-
-**💼 LinkedIn:** [linkedin.com/in/leoo-bai](https://linkedin.com/in/leoo-bai)  
-**💻 GitHub:** [github.com/imleoo](https://github.com/imleoo)  
-**🌐 Website:** [aiseo.icu](https://aiseo.icu)
-
----
-
-*"Building innovative technology solutions that bridge the gap between cutting-edge AI and practical business applications."*
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 200px;
+  }
+}
+</style>
