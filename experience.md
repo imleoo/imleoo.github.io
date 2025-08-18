@@ -10,66 +10,53 @@ description: "Explore Leoo Bai's professional journey including leadership roles
 ## Current Roles
 
 ### Founder & CEO
-**AiSEO.icu** | *2025 - Present*
+**北京极物科技有限公司 (Beijing Jiwu Technology)** | *2019 - Present*
 
-Building next-generation AI-powered SEO and digital marketing infrastructure for global businesses, focusing on innovative solutions that bridge cutting-edge AI technology with practical marketing applications.
+Building innovative AI technology solutions across multiple domains, from agricultural quality analysis to digital marketing infrastructure.
 
----
+**Evolution & Growth:**
+- **2019-2021**: Pioneered AI-powered agricultural quality analysis using near-infrared spectroscopy
+- **2021-2023**: Expanded into data governance and enterprise AI solutions
+- **2023-2025**: Developed comprehensive AI risk assessment and compliance systems
+- **2025-Present**: Launched AiSEO.icu - next-generation AI-powered SEO and digital marketing infrastructure
 
-## Recent Executive Experience
+**Key Achievements Across Phases:**
 
-### CTO
-**北京萃橙科技有限公司 (Beijing Cui Orange Technology)** | *2023 - 2025*
-
-Led technical strategy and innovation across multiple AI and data-driven projects, specializing in risk assessment and compliance systems.
-
-**Key Achievements:**
-- **Cross-border Trade Compliance System**: Developed AI-powered risk assessment models achieving 95%+ compliance risk identification
-- **Customs Tax Risk Assessment**: Implemented Transformer and LSTM algorithms for tax risk identification with 99.93% HS code accuracy
-- **Financial Risk Modeling**: Created trade finance risk models for banking institutions, identifying false trade and money laundering risks
-
-**Technical Leadership:**
-- Built and managed technical teams of 15+ engineers
-- Architected scalable AI/ML systems for financial services
-- Established data governance and model validation frameworks
-- Coordinated with regulatory bodies and financial institutions
-
-### Technical Solutions Architect
-**神策网络科技 (Sensors Data)** | *2021 - 2023*
-
-Designed and implemented data governance solutions for enterprise clients across financial, telecommunications, and retail sectors.
-
-**Major Projects:**
-- **Data Governance Product Marketization**: Led technical solution development for 10+ major enterprise clients
-- **OneID Solution Architecture**: Designed ID-Mapping services for financial, real estate, and retail customers
-- **Customer Data Platform (CDP)**: Built data governance frameworks for Top 3 direct sales, Top 5 real estate, and leading multinational corporations
-- **Financial Customer Data Platform**: Developed data governance solutions for Top 5 banks and securities firms
-
-**Client Impact:**
-- Supported 10+ Fortune 500 companies
-- Improved data quality and consistency across platforms
-- Enhanced customer insights and personalization capabilities
-- Reduced data processing costs by 40% on average
-
----
-
-## Entrepreneurial Ventures
-
-### Founder
-**北京极物科技有限公司 (Beijing Jiwu Technology)** | *2019 - 2021*
-
-Pioneered AI-powered agricultural quality analysis using near-infrared spectroscopy technology.
-
-**Innovation:**
+**🔬 Agricultural AI Innovation (2019-2021)**
 - Developed intelligent analysis systems for fruit quality assessment
 - Created custom hardware with near-infrared + infrared imaging capabilities
 - Successfully analyzed peaches, apples, and strawberries for quality, sugar content, and ripeness
 - Built real-time monitoring systems for decay detection
+- Integrated hardware and software solutions with machine learning algorithms
 
-**Technical Achievement:**
-- Integrated hardware and software solutions
-- Applied machine learning for pattern recognition
-- Developed proprietary algorithms for agricultural applications
+**📊 Data Governance & Enterprise AI (2021-2023)**
+- Designed and implemented data governance solutions for enterprise clients
+- Led technical solution development for 10+ major enterprise clients including Fortune 500 companies
+- Built OneID solution architecture for financial, real estate, and retail customers
+- Developed Customer Data Platform (CDP) frameworks for leading corporations
+- Reduced data processing costs by 40% on average for enterprise clients
+
+**🛡️ AI Risk Assessment & Compliance (2023-2025)**
+- Developed AI-powered risk assessment models achieving 95%+ compliance risk identification
+- Implemented Transformer and LSTM algorithms for tax risk identification with 99.93% HS code accuracy
+- Created trade finance risk models for banking institutions for fraud detection and anti-money laundering
+- Built and managed technical teams of 15+ engineers
+- Architected scalable AI/ML systems for financial services
+- Established data governance and model validation frameworks
+
+**🚀 AiSEO.icu - AI-Powered Digital Marketing (2025-Present)**
+- Building next-generation AI-powered SEO and digital marketing infrastructure
+- Focusing on innovative solutions that bridge cutting-edge AI technology with practical marketing applications
+- Developing scalable AI solutions for global businesses
+- Creating intelligent content optimization and search engine algorithms
+
+**Technical Leadership & Innovation:**
+- Built and managed technical teams ranging from 5 to 15+ engineers across different phases
+- Architected scalable AI/ML systems for multiple industries (agriculture, finance, marketing)
+- Established comprehensive data governance and model validation frameworks
+- Coordinated with regulatory bodies, financial institutions, and enterprise clients
+- Successfully transitioned from hardware-based AI solutions to pure software and SaaS models
+- Maintained focus on practical, business-driven AI applications across all ventures
 
 ---
 

@@ -5,17 +5,17 @@
 
 /* Variables for consistent theming */
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #7c3aed;
-  --accent-color: #06b6d4;
+  --primary-color: #009e9f;
+  --secondary-color: #007b7c;
+  --accent-color: #00b8b9;
   --text-primary: #1f2937;
   --text-secondary: #6b7280;
   --bg-primary: #ffffff;
   --bg-secondary: #f9fafb;
   --border-color: #e5e7eb;
-  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --gradient-1: linear-gradient(135deg, #009e9f 0%, #007b7c 100%);
+  --gradient-2: linear-gradient(135deg, #00b8b9 0%, #009e9f 100%);
+  --gradient-3: linear-gradient(135deg, #00d4d5 0%, #00b8b9 100%);
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);

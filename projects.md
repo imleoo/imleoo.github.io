@@ -9,10 +9,25 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 
 ## Current Venture
 
-### AiSEO.icu
-*AI-Powered SEO & Digital Marketing Platform* | *2025 - Present*
+### Beijing Jiwu Technology (极物科技)
+*AI Innovation Platform* | *2019 - Present*
 
-**Overview:** Building next-generation AI-powered SEO and digital marketing infrastructure for global businesses, with focus on innovative solutions that bridge cutting-edge AI technology with practical marketing applications.
+**Overview:** Building innovative AI technology solutions across multiple domains, from agricultural quality analysis to digital marketing infrastructure.
+
+**Evolution & Growth:**
+- **2019-2021**: Smart Agricultural Quality Analysis
+- **2021-2023**: Enterprise Data Governance Solutions  
+- **2023-2025**: AI Risk Assessment & Financial Modeling
+- **2025-Present**: AiSEO.icu - AI-Powered Digital Marketing Platform
+
+---
+
+## Major Technical Achievements
+
+### 🚀 AiSEO.icu - AI-Powered Digital Marketing
+*Beijing Jiwu Technology* | *2025 - Present*
+
+**Overview:** Building next-generation AI-powered SEO and digital marketing infrastructure for global businesses.
 
 **Technology Stack:**
 - **AI/ML**: Natural Language Processing, Machine Learning Models
@@ -26,47 +41,26 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 - Predictive analytics for marketing performance
 - Automated content generation and distribution
 
----
+### 🛡️ AI Risk Assessment & Financial Modeling
+*Beijing Jiwu Technology* | *2023-2025*
 
-## Major Technical Achievements
-
-### Cross-border Trade Compliance System
-*Beijing Cui Orange Technology* | *2023-2025*
-
-**Overview:** Led development of comprehensive AI-powered risk assessment system for international trade compliance.
-
-**Technical Innovation:**
+**Cross-border Trade Compliance System:**
 - Implemented Transformer and LSTM algorithms for customs tax risk assessment
 - Developed multi-dimensional risk analysis covering HS code classification, declaration compliance, pricing verification, and origin validation
 - Achieved industry-leading accuracy rates: 99.93% HS code classification, 90%+ compliance risk identification
+- Reduced compliance processing time by 70%, improved risk detection accuracy by 40%
 
-**Business Impact:**
-- Reduced compliance processing time by 70%
-- Improved risk detection accuracy by 40%
-- Supported regulatory compliance for major trading companies
-- Established new standards for automated customs risk assessment
-
-### Financial Risk Modeling Platform
-*Banking Sector* | *2023-2025*
-
-**Overview:** Created sophisticated risk assessment models for trade finance and banking operations.
-
-**Technical Achievement:**
+**Financial Risk Modeling Platform:**
 - Processed millions of historical customs declaration records
 - Developed models for false trade, money laundering, and tax fraud detection
 - Integrated with banking loan approval and foreign exchange settlement systems
-- Real-time risk scoring and decision support
+- Processed 10M+ transaction records with 92%+ accuracy in risk prediction
+- Reduced loan processing time by 60%, supported banking institutions with ¥10B+ in trade finance
 
-**Scale & Performance:**
-- Processed 10M+ transaction records
-- Achieved 92%+ accuracy in risk prediction
-- Reduced loan processing time by 60%
-- Supported banking institutions with ¥10B+ in trade finance
+### 📊 Enterprise Data Governance Solutions
+*Sensors Data (神策数据)* | *2021-2023*
 
-### Enterprise Data Governance Solutions
-*Sensors Data* | *2021-2023*
-
-**Overview:** Designed and implemented comprehensive data governance frameworks for Fortune 500 companies.
+**Overview:** Designed and implemented comprehensive data governance frameworks for Fortune 500 companies as Technical Solutions Architect.
 
 **Key Implementations:**
 - **Financial Sector**: Data governance for Top 5 banks and securities firms
@@ -86,11 +80,7 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 - Enhanced customer insights and personalization
 - Supported compliance with data protection regulations
 
----
-
-## Entrepreneurial Projects
-
-### Smart Agricultural Quality Analysis
+### 🔬 Smart Agricultural Quality Analysis
 *Beijing Jiwu Technology* | *2019-2021*
 
 **Overview:** Pioneered AI-powered agricultural quality analysis using near-infrared spectroscopy technology.

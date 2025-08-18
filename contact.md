@@ -13,8 +13,8 @@ I'm always excited to connect with fellow technology leaders, AI specialists, en
 
 For business partnerships, consulting opportunities, or investment discussions:
 
-**📧 Email:** [baidexin@outlook.com](mailto:baidexin@outlook.com)  
-**📱 Phone:** +86 18515881222  
+**📧 Email:** [imleoo@gmail.com](mailto:imleoo@gmail.com)  
+  
 **🌐 Website:** [aiseo.icu](https://aiseo.icu)
 
 ## Professional Network
@@ -74,6 +74,111 @@ With extensive experience in technology leadership, I offer consulting services 
 - **Product Development**: From concept to market technical guidance
 - **Scaling Strategy**: Technology infrastructure for growth phases
 - **Fundraising Support**: Technical narrative and pitch preparation
+
+## Development Services
+
+### 🚀 AiSEO - AI-Powered SEO Solutions
+*Leveraging cutting-edge AI technology for search engine optimization*
+
+**Core Services:**
+- **AI Content Optimization**: Advanced NLP algorithms for content enhancement
+- **Multilingual SEO**: Global SEO strategies for multiple languages and regions
+- **Predictive Analytics**: Data-driven SEO performance forecasting
+- **Automated Content Generation**: AI-powered content creation and optimization
+- **Technical SEO**: Site architecture, speed optimization, and mobile responsiveness
+- **Competitive Analysis**: AI-driven competitor analysis and market positioning
+
+**Technology Stack:**
+- Natural Language Processing & Machine Learning
+- Real-time data processing and analytics
+- Cloud-based scalable infrastructure
+- Advanced SEO algorithms and ranking factors
+
+### 🎯 Landing Page Development
+*High-converting landing pages designed for maximum impact*
+
+**Services Include:**
+- **Strategic Design**: Conversion-focused layouts and user experience
+- **Mobile-First**: Responsive design for all devices and screen sizes
+- **Performance Optimization**: Fast loading times and smooth interactions
+- **A/B Testing**: Data-driven design optimization
+- **Analytics Integration**: Comprehensive tracking and performance monitoring
+- **SEO Optimization**: Search engine friendly structure and content
+
+**Features:**
+- Modern frameworks (React, Vue.js, or static sites)
+- Contact forms and lead generation
+- Integration with marketing tools
+- Custom animations and interactions
+- Content management systems
+
+### 🏢 Corporate Website Development
+*Professional websites tailored for business growth*
+
+**Comprehensive Solutions:**
+- **Brand Identity**: Custom design reflecting your brand values
+- **Content Management**: Easy-to-use CMS for non-technical users
+- **E-commerce Integration**: Online stores and payment processing
+- **Database Integration**: Custom business applications and data management
+- **Security & Compliance**: Enterprise-grade security and data protection
+- **Maintenance & Support**: Ongoing updates and technical assistance
+
+**Technical Capabilities:**
+- Full-stack development (frontend + backend)
+- Database design and optimization
+- API development and third-party integrations
+- Cloud deployment and scalability
+- Performance monitoring and optimization
+
+## Global Enterprise Services
+
+### 🌍 China Market Digital Transformation
+*Helping overseas enterprises establish digital presence and services in China*
+
+**Market Entry Services:**
+- **Digital Strategy**: China market-specific digital transformation roadmap
+- **Regulatory Compliance**: Navigating China's internet regulations and data laws
+- **Localization**: Cultural and linguistic adaptation for Chinese market
+- **Market Research**: Analysis of China's digital landscape and competition
+
+**Technical Implementation:**
+- **China-Optimized Infrastructure**: Servers and CDN optimized for Chinese internet
+- **WeChat Integration**: Mini-programs, official accounts, and payment systems
+- **Local Platform Integration**: Baidu, Alibaba, Tencent ecosystem compatibility
+- **Mobile-First Solutions**: China's mobile-centric market requirements
+
+**Business Solutions:**
+- **E-commerce Solutions**: Cross-border e-commerce platforms and logistics
+- **Customer Service**: Chinese customer support systems and chatbots
+- **Marketing Automation**: China-specific digital marketing tools and strategies
+- **Data Analytics**: Chinese consumer behavior and market insights
+
+**Enterprise Services:**
+- **IT Infrastructure**: Cloud solutions compliant with Chinese regulations
+- **Software Development**: Custom applications for Chinese business needs
+- **Integration Services**: Connecting with Chinese business systems and APIs
+- **Ongoing Support**: Localized maintenance and technical support
+
+### 🤝 Cross-Cultural Business Development
+*Bridging international businesses with Chinese enterprise clients*
+
+**Services for Overseas Companies:**
+- **China Partner Search**: Finding and vetting Chinese business partners
+- **Business Development**: Sales and marketing strategy for Chinese market
+- **Technical Localization**: Adapting products for Chinese enterprise requirements
+- **Legal & Compliance**: Navigating Chinese business regulations and requirements
+
+**China Market Expertise:**
+- **Internet Regulations**: Understanding of China's digital ecosystem
+- **Business Culture**: Cross-cultural communication and negotiation
+- **Technology Standards**: Chinese technical standards and best practices
+- **Market Access**: Strategies for entering restricted market sectors
+
+**Implementation Support:**
+- **Team Building**: Establishing local technical and business teams
+- **Office Setup**: Physical and digital infrastructure for China operations
+- **Training Programs**: Cross-cultural and technical training for staff
+- **Quality Assurance**: Ensuring service standards meet international requirements
 
 ## Speaking Engagements
 
