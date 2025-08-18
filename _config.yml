@@ -1,10 +1,90 @@
-title: Leoo Bai
-description: Senior Technology Executive & AI Specialist | 10+ years in Big Data, Video Streaming, Cloud Computing & AI
-show_downloads: false
-google_analytics:
-remote_theme: pages-themes/cayman@v0.2.0
+# Site Settings
+title: "Leoo Bai"
+title_separator: "-"
+subtitle: "Senior Technology Executive & AI Specialist"
+name: "白德鑫 Leoo Bai"
+description: "Senior Technology Executive & AI Specialist | 10+ years in Big Data, Video Streaming, Cloud Computing & AI"
+url: "https://imleoo.github.io"
+baseurl: ""
+repository: "imleoo/imleoo.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Minimal Mistakes Settings
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+minimal_mistakes_skin: "default"
 plugins:
   - jekyll-remote-theme
-cayman-theme:
-  project_name: "白德鑫 Leoo Bai"
-  project_tagline: "Senior Technology Executive & AI Specialist"
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-include-cache
+
+# Reading Files
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+  - LICENSE
+  - CHANGELOG.md
+
+# Site Author
+author:
+  name: "白德鑫 Leoo Bai"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Senior Technology Executive & AI Specialist"
+  location: "China"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/imleoo"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/leoo-bai"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/imleoo"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/leoo-bai"
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
