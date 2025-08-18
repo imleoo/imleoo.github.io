@@ -48,6 +48,9 @@ toc: true
 # Social sharing
 og_image: "/assets/images/og-image.jpg"
 
+# Reading time settings
+words_per_minute: 200
+
 # Default layout
 defaults:
   - scope:
