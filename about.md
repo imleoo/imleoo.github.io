@@ -5,7 +5,7 @@ permalink: /about/
 description: "Learn about Leoo Bai's professional journey, leadership philosophy, and expertise in AI, big data, and technology management."
 ---
 
-# About 白德鑫 Leoo Bai
+# About Leoo Bai
 
 ## Professional Journey
 

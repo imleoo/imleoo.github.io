@@ -5,7 +5,7 @@ layout: home
 <!-- Hero Section -->
 <div class="hero-section">
   <div class="hero-content">
-    <h1 class="hero-title">白德鑫 Leoo Bai</h1>
+    <h1 class="hero-title">Leoo Bai</h1>
     <p class="hero-subtitle">Senior Technology Executive & AI Specialist</p>
     <p class="hero-description">Founder of AiSEO.icu | 10+ years in AI, Big Data & Cloud Computing</p>
     <div class="hero-buttons">
