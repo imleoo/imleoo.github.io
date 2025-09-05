@@ -26,7 +26,6 @@ plugins:
 
 # Social
 github_username: imleoo
-linkedin_username: leoo-bai
 twitter_username: leoobai
 
 # Analytics
@@ -94,20 +93,14 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/imleoo"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/leoo-bai"
-
+  
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/imleoo"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/leoo-bai"
-
+  
 # Defaults
 defaults:
   - scope:

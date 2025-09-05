@@ -21,10 +21,9 @@ For business partnerships, consulting opportunities, or investment discussions:
 
 Let's connect on professional platforms:
 
-**💼 LinkedIn:** [linkedin.com/in/leoo-bai](https://linkedin.com/in/leoo-bai)  
 **🐦 Twitter:** [@leoobai](https://twitter.com/leoobai)  
 **💻 GitHub:** [github.com/imleoo](https://github.com/imleoo)  
-**💬 WeChat:** [leoobai](weixin://contacts?username=leoobai)
+**💬 WeChat:** leoobai
 
 ## Collaboration Opportunities
 

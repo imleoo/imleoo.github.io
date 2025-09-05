@@ -156,11 +156,6 @@ layout: home
   
   <div class="contact-grid">
     <div class="contact-item">
-      <div class="contact-icon">💼</div>
-      <h3>LinkedIn</h3>
-      <a href="https://linkedin.com/in/leoo-bai" target="_blank">linkedin.com/in/leoo-bai</a>
-    </div>
-    <div class="contact-item">
       <div class="contact-icon">💻</div>
       <h3>GitHub</h3>
       <a href="https://github.com/imleoo" target="_blank">github.com/imleoo</a>
@@ -178,7 +173,7 @@ layout: home
     <div class="contact-item">
       <div class="contact-icon">💬</div>
       <h3>WeChat</h3>
-      <a href="weixin://contacts?username=leoobai" target="_blank">leoobai</a>
+      <p>leoobai</p>
     </div>
   </div>
 </div>
