@@ -59,7 +59,7 @@ I'll be sharing insights about AI-powered marketing, SEO optimization, and the f
 
 ### Subscribe for Updates
 
-Want to be notified when new articles are published? **Connect with me on [Twitter](https://twitter.com/leoobai)** or **[LinkedIn](https://linkedin.com/in/leoo-bai)** for the latest updates.
+Want to be notified when new articles are published? **Connect with me on [Twitter](https://twitter.com/leoobai)** for the latest updates.
 
 ### Guest Posts & Collaborations
 
@@ -76,7 +76,6 @@ Please reach out via [email](mailto:imleoo@gmail.com) with your ideas.
 
 While this blog is being set up, you can find some of my previous work on:
 
-- **[LinkedIn Articles](https://linkedin.com/in/leoo-bai)**
 - **[Twitter Threads](https://twitter.com/leoobai)**
 - **[Industry Publications](https://aiseo.icu/blog)**
 

@@ -9,8 +9,8 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 
 ## Current Venture
 
-### Beijing Jiwu Technology (极物科技)
-*AI Innovation Platform* | *2019 - Present*
+### AI Innovation Platform
+*Technology Company* | *2019 - Present*
 
 **Overview:** Building innovative AI technology solutions across multiple domains, from agricultural quality analysis to digital marketing infrastructure.
 
@@ -25,7 +25,7 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 ## Major Technical Achievements
 
 ### 🚀 AiSEO.icu - AI-Powered Digital Marketing
-*Beijing Jiwu Technology* | *2025 - Present*
+*Technology Company* | *2025 - Present*
 
 **Overview:** Building next-generation AI-powered SEO and digital marketing infrastructure for global businesses.
 
@@ -42,7 +42,7 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 - Automated content generation and distribution
 
 ### 🛡️ AI Risk Assessment & Financial Modeling
-*Beijing Jiwu Technology* | *2023-2025*
+*Technology Company* | *2023-2025*
 
 **Cross-border Trade Compliance System:**
 - Implemented Transformer and LSTM algorithms for customs tax risk assessment
@@ -58,7 +58,7 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 - Reduced loan processing time by 60%, supported banking institutions with ¥10B+ in trade finance
 
 ### 📊 Enterprise Data Governance Solutions
-*Sensors Data (神策数据)* | *2021-2023*
+*Data Analytics Company* | *2021-2023*
 
 **Overview:** Designed and implemented comprehensive data governance frameworks for Fortune 500 companies as Technical Solutions Architect.
 
@@ -81,7 +81,7 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 - Supported compliance with data protection regulations
 
 ### 🔬 Smart Agricultural Quality Analysis
-*Beijing Jiwu Technology* | *2019-2021*
+*Technology Company* | *2019-2021*
 
 **Overview:** Pioneered AI-powered agricultural quality analysis using near-infrared spectroscopy technology.
 
@@ -98,7 +98,7 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 - Achieved 95%+ accuracy in quality assessment
 
 ### Large-scale Video Platform Architecture
-*Future TV* | *2017-2019*
+*Media Technology Company* | *2017-2019*
 
 **Overview:** Led development of internet television platform supporting 130+ million users.
 
@@ -115,14 +115,14 @@ description: "Discover Leoo Bai's key projects including AI-powered SEO platform
 - High-availability architecture with 99.9% uptime
 
 ### Glasses-free 3D Technology Ecosystem
-*Shenzhen SuperD* | *2014-2017*
+*3D Technology Company* | *2014-2017*
 
 **Overview:** Built comprehensive technology ecosystem for glasses-free 3D mobile applications.
 
 **Key Products:**
 - **InFocus M550 3D Phone**: Complete software platform development
 - **3D BOX Device**: OS and platform for commercial success
-- **SuperD D1 Phone**: Successfully launched glasses-free 3D smartphone
+- **3D Smartphone**: Successfully launched glasses-free 3D smartphone
 
 **Technical Innovation:**
 - 3D video processing and streaming

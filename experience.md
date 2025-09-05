@@ -10,7 +10,7 @@ description: "Explore Leoo Bai's professional journey including leadership roles
 ## Current Roles
 
 ### Founder & CEO
-**北京极物科技有限公司 (Beijing Jiwu Technology)** | *2019 - Present*
+**Technology Innovation Company** | *2019 - Present*
 
 Building innovative AI technology solutions across multiple domains, from agricultural quality analysis to digital marketing infrastructure.
 
@@ -63,12 +63,12 @@ Building innovative AI technology solutions across multiple domains, from agricu
 ## Senior Technology Leadership
 
 ### CTO
-**未来电视有限公司 (Future TV)** | *2017 - 2019*
+**Internet Television Platform** | *2017 - 2019*
 
 Led technology innovation for one of China's largest internet television platforms, serving 130+ million users.
 
 **Major Accomplishments:**
-- **Internet TV Platform**: Led new platform development supporting Xiaomi, LeTV, and China Mobile terminals
+- **Internet TV Platform**: Led new platform development supporting major smart TV and mobile platforms
 - **CCTV Video App**: Built platform supporting 80 million concurrent users during World Cup
 - **Video Restoration**: Led team processing 8 million hours of historical video content for HD conversion
 - **Big Data Platform**: Developed user behavior analysis and profiling systems for 130M+ users
@@ -80,7 +80,7 @@ Led technology innovation for one of China's largest internet television platfor
 - Reduced content distribution time from 45 to 8 minutes
 
 ### Technical Vice President
-**深圳超多维科技有限公司 (Shenzhen SuperD)** | *2014 - 2017**
+**3D Technology Company** | *2014 - 2017**
 
 Built comprehensive technology ecosystem for glasses-free 3D mobile technology.
 
@@ -94,7 +94,7 @@ Built comprehensive technology ecosystem for glasses-free 3D mobile technology.
 **Product Success:**
 - **InFocus M550 3D Phone**: Led complete software platform development
 - **3D BOX Device**: Developed OS and software platform for commercial success
-- **SuperD D1 Phone**: Successfully launched glasses-free 3D smartphone
+- **3D Smartphone**: Successfully launched glasses-free 3D smartphone
 
 **E-commerce Development:**
 - Built complete e-commerce platform from scratch
@@ -103,15 +103,15 @@ Built comprehensive technology ecosystem for glasses-free 3D mobile technology.
 - Achieved 99.9% uptime during peak events
 
 ### Technical Deputy Director
-**乐视网信息技术 (LeTV)** | *2011 - 2014**
+**Internet Television Company** | *2011 - 2014**
 
 Played key role in building one of China's first comprehensive internet television ecosystems.
 
 **Strategic Contributions:**
-- **Smart TV Platform**: Developed LeTV Super TV OS and operation platform
+- **Smart TV Platform**: Developed smart TV OS and operation platform
 - **Big Data Infrastructure**: Built real-time and batch processing systems for user analytics
 - **Open Platform**: Created TV application ecosystem and developer platform
-- **Cloud Computing**: Contributed to LeTV Cloud platform development and global CDN
+- **Cloud Computing**: Contributed to cloud platform development and global CDN
 
 **Technical Achievements:**
 - Led system supporting millions of concurrent users
@@ -124,7 +124,7 @@ Played key role in building one of China's first comprehensive internet televisi
 ## Early Career
 
 ### Technical Manager
-**TCL Industrial Research Institute** | *2009 - 2011**
+**Consumer Electronics Research Institute** | *2009 - 2011**
 
 Led internet television platform development and established technical foundations for smart TV ecosystem.
 
@@ -136,7 +136,7 @@ Led internet television platform development and established technical foundatio
 - **Open Standards**: Led development of internet TV browser standards
 
 ### Senior System Architect
-**鸿越长空软件 (Hongyue Changkong)** | *2006 - 2009*
+**Gaming Software Company** | *2006 - 2009*
 
 Architected gaming platforms and led technical development for competitive gaming applications.
 
@@ -146,7 +146,7 @@ Architected gaming platforms and led technical development for competitive gamin
 - **System Optimization**: Enhanced platform performance and scalability
 
 ### Technical Manager
-**北京大用软件 (Beijing Dayong Software)** | *2002 - 2006**
+**Telecommunications Software Company** | *2002 - 2006**
 
 Early career in telecommunications and protocol analysis, laying foundation for systems architecture expertise.
 
@@ -158,14 +158,8 @@ Early career in telecommunications and protocol analysis, laying foundation for 
 
 ---
 
-## Education & Professional Development
+## Professional Recognition
 
-### Advanced Degrees
-- **MBA in Business Administration** | Communication University of China (2016-2018)
-- **Master's in Computer Technology** | Wuhan University (2014-2017)
-- **Bachelor's in Computer Application** | Zhengzhou University (1994-1998)
-
-### Professional Recognition
 - **Tencent Cloud Most Valuable Expert**
 - **TGO (Kunpeng Association) Outstanding Team Leader**
 
