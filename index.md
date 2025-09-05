@@ -175,6 +175,11 @@ layout: home
       <h3>Email</h3>
       <a href="mailto:imleoo@gmail.com">imleoo@gmail.com</a>
     </div>
+    <div class="contact-item">
+      <div class="contact-icon">💬</div>
+      <h3>WeChat</h3>
+      <a href="weixin://contacts?username=leoobai" target="_blank">leoobai</a>
+    </div>
   </div>
 </div>
 

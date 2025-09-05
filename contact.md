@@ -23,7 +23,8 @@ Let's connect on professional platforms:
 
 **💼 LinkedIn:** [linkedin.com/in/leoo-bai](https://linkedin.com/in/leoo-bai)  
 **🐦 Twitter:** [@leoobai](https://twitter.com/leoobai)  
-**💻 GitHub:** [github.com/imleoo](https://github.com/imleoo)
+**💻 GitHub:** [github.com/imleoo](https://github.com/imleoo)  
+**💬 WeChat:** [leoobai](weixin://contacts?username=leoobai)
 
 ## Collaboration Opportunities
 
