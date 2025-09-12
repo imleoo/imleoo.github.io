@@ -15,6 +15,30 @@ layout: home
   </div>
 </div>
 
+<!-- Latest Blog Posts -->
+<div class="container" style="padding: 4rem 2rem;">
+  <div class="text-center mb-5">
+    <h2 class="section-title">Latest Insights</h2>
+    <p class="section-subtitle">Sharing knowledge and experiences</p>
+  </div>
+  
+  <div class="blog-grid">
+    {% for post in site.posts limit: 3 %}
+    <div class="blog-card">
+      <div class="blog-card-image">
+        <span>📝</span>
+      </div>
+      <div class="blog-card-content">
+        <h3 class="blog-card-title">{{ post.title }}</h3>
+        <p class="blog-card-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <a href="{{ post.url }}" class="btn-primary" style="margin-top: 1rem;">Read More</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
 <!-- Skills Section -->
 <div class="container" style="padding: 4rem 2rem;">
   <div class="text-center mb-5">
@@ -120,30 +144,6 @@ layout: home
         </ul>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- Latest Blog Posts -->
-<div class="container" style="padding: 4rem 2rem;">
-  <div class="text-center mb-5">
-    <h2 class="section-title">Latest Insights</h2>
-    <p class="section-subtitle">Sharing knowledge and experiences</p>
-  </div>
-  
-  <div class="blog-grid">
-    {% for post in site.posts limit: 3 %}
-    <div class="blog-card">
-      <div class="blog-card-image">
-        <span>📝</span>
-      </div>
-      <div class="blog-card-content">
-        <h3 class="blog-card-title">{{ post.title }}</h3>
-        <p class="blog-card-date">{{ post.date | date: "%B %d, %Y" }}</p>
-        <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-        <a href="{{ post.url }}" class="btn-primary" style="margin-top: 1rem;">Read More</a>
-      </div>
-    </div>
-    {% endfor %}
   </div>
 </div>
 
