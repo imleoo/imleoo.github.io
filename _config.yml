@@ -82,6 +82,8 @@ navigation:
       url: /blog/
     - title: "📞 Contact"
       url: /contact/
+    - title: "🎣 Fishing Weather"
+      url: /fishing-weather/
 
 # Site Author
 author:
