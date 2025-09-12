@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2025年Schema标记模板大全（附可直接复制代码）"
-date: 2025-09-12 12:00:00 +0800
+date: 2025-09-12 10:32:00 +0800
 categories: [SEO, Schema Markup, Technical SEO, Web Development]
 description: "2025年SEO核心武器：12类高频Schema标记模板，覆盖内容页、电商页、本地商家等场景，附完整代码示例和避坑指南"
 excerpt: "Schema标记是2025年SEO的核心武器，整理了12类高频使用场景的Schema模板，可直接复制修改使用"
