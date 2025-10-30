@@ -1,0 +1,257 @@
+<svg viewBox="0 0 1400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradients and styles -->
+  <defs>
+    <!-- Blue gradient -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Green gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Purple gradient -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Orange gradient -->
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Pink gradient -->
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DB2777;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow gradient -->
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#10B981;stop-opacity:0.3" />
+    </linearGradient>
+
+    <!-- Cycle gradient -->
+    <linearGradient id="cycleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="600" fill="#F8FAFC" />
+
+  <!-- Title -->
+  <g>
+    <text x="700" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1E293B">
+      AI Development Workflow - Continuous Iteration Model
+    </text>
+    <text x="700" y="90" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748B">
+      Five-Step Process for Building Sustainable AI Product Capabilities
+    </text>
+  </g>
+
+  <!-- Main workflow steps -->
+  <g>
+    <!-- Step 1: Requirements Documentation -->
+    <rect x="100" y="150" width="200" height="80" rx="10" fill="url(#blueGrad)" />
+    <text x="200" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      1. Requirements
+    </text>
+    <text x="200" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.9">
+      Documentation
+    </text>
+
+    <!-- Step 2: AI Generation -->
+    <rect x="350" y="150" width="200" height="80" rx="10" fill="url(#greenGrad)" />
+    <text x="450" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      2. AI
+    </text>
+    <text x="450" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.9">
+      Generation
+    </text>
+
+    <!-- Step 3: Review & Improvement -->
+    <rect x="600" y="150" width="200" height="80" rx="10" fill="url(#purpleGrad)" />
+    <text x="700" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      3. Review &amp;
+    </text>
+    <text x="700" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.9">
+      Improvement
+    </text>
+
+    <!-- Step 4: Testing & Validation -->
+    <rect x="850" y="150" width="200" height="80" rx="10" fill="url(#orangeGrad)" />
+    <text x="950" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      4. Testing &amp;
+    </text>
+    <text x="950" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.9">
+      Validation
+    </text>
+
+    <!-- Step 5: Knowledge Accumulation -->
+    <rect x="1100" y="150" width="200" height="80" rx="10" fill="url(#pinkGrad)" />
+    <text x="1200" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      5. Knowledge
+    </text>
+    <text x="1200" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.9">
+      Accumulation
+    </text>
+  </g>
+
+  <!-- Arrows between steps -->
+  <g>
+    <!-- Arrow 1-2 -->
+    <polygon points="300,190 320,190 315,185 320,180 300,180" fill="#64748B" />
+    <line x1="300" y1="190" x2="350" y2="190" stroke="#64748B" stroke-width="2" />
+
+    <!-- Arrow 2-3 -->
+    <polygon points="550,190 570,190 565,185 570,180 550,180" fill="#64748B" />
+    <line x1="550" y1="190" x2="600" y2="190" stroke="#64748B" stroke-width="2" />
+
+    <!-- Arrow 3-4 -->
+    <polygon points="800,190 820,190 815,185 820,180 800,180" fill="#64748B" />
+    <line x1="800" y1="190" x2="850" y2="190" stroke="#64748B" stroke-width="2" />
+
+    <!-- Arrow 4-5 -->
+    <polygon points="1050,190 1070,190 1065,185 1070,180 1050,180" fill="#64748B" />
+    <line x1="1050" y1="190" x2="1100" y2="190" stroke="#64748B" stroke-width="2" />
+  </g>
+
+  <!-- Continuous iteration cycle -->
+  <g>
+    <!-- Circular arrow from step 5 back to step 1 -->
+    <path d="M 1200 230 Q 1300 280 1200 330 Q 1100 380 1000 330 Q 900 280 1000 230 Q 1100 180 1200 230" 
+          fill="none" stroke="url(#cycleGrad)" stroke-width="8" stroke-dasharray="5,5" />
+    
+    <!-- Arrow head for cycle -->
+    <polygon points="1000,230 990,225 995,230 990,235 1000,230" fill="#8B5CF6" />
+    
+    <!-- Cycle label -->
+    <text x="1100" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">
+      ♻️ Continuous Iteration Cycle
+    </text>
+  </g>
+
+  <!-- Step descriptions -->
+  <g>
+    <!-- Step 1 description -->
+    <rect x="100" y="250" width="200" height="60" rx="5" fill="white" stroke="#E2E8F0" stroke-width="1" />
+    <text x="200" y="270" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      Define goals, scope, collect
+    </text>
+    <text x="200" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      requirements, success criteria
+    </text>
+
+    <!-- Step 2 description -->
+    <rect x="350" y="250" width="200" height="60" rx="5" fill="white" stroke="#E2E8F0" stroke-width="1" />
+    <text x="450" y="270" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      Document optimization, rapid
+    </text>
+    <text x="450" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      prototyping, intelligent coding
+    </text>
+
+    <!-- Step 3 description -->
+    <rect x="600" y="250" width="200" height="60" rx="5" fill="white" stroke="#E2E8F0" stroke-width="1" />
+    <text x="700" y="270" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      Code review, quality optimization,
+    </text>
+    <text x="700" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      performance tuning
+    </text>
+
+    <!-- Step 4 description -->
+    <rect x="850" y="250" width="200" height="60" rx="5" fill="white" stroke="#E2E8F0" stroke-width="1" />
+    <text x="950" y="270" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      Unit, integration, smoke/user
+    </text>
+    <text x="950" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      feedback loop testing
+    </text>
+
+    <!-- Step 5 description -->
+    <rect x="1100" y="250" width="200" height="60" rx="5" fill="white" stroke="#E2E8F0" stroke-width="1" />
+    <text x="1200" y="270" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      Document archiving, experience
+    </text>
+    <text x="1200" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">
+      summary, best practices
+    </text>
+  </g>
+
+  <!-- Output deliverables -->
+  <g>
+    <!-- Step 1 deliverables -->
+    <rect x="100" y="320" width="200" height="40" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <text x="200" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748B">
+      Problem Statement, Success Criteria
+    </text>
+
+    <!-- Step 2 deliverables -->
+    <rect x="350" y="320" width="200" height="40" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <text x="450" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748B">
+      Initial solutions, Prompt drafts
+    </text>
+
+    <!-- Step 3 deliverables -->
+    <rect x="600" y="320" width="200" height="40" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <text x="700" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748B">
+      Review records, improvement suggestions
+    </text>
+
+    <!-- Step 4 deliverables -->
+    <rect x="850" y="320" width="200" height="40" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <text x="950" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748B">
+      Test cases, evaluation sets, A/B results
+    </text>
+
+    <!-- Step 5 deliverables -->
+    <rect x="1100" y="320" width="200" height="40" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <text x="1200" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748B">
+      Development logs, Prompt libraries
+    </text>
+  </g>
+
+  <!-- Benefits section -->
+  <g>
+    <!-- Benefit 1 -->
+    <circle cx="280" cy="450" r="8" fill="#10B981" />
+    <text x="300" y="454" font-family="Arial, sans-serif" font-size="13" fill="#475569">📈 Measurable Progress</text>
+    <text x="300" y="472" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">Quantifiable improvement in each iteration</text>
+
+    <!-- Benefit 2 -->
+    <circle cx="460" cy="450" r="8" fill="#10B981" />
+    <text x="480" y="454" font-family="Arial, sans-serif" font-size="13" fill="#475569">🔄 Sustainable Assets</text>
+    <text x="480" y="472" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">Experience accumulation forms assets</text>
+
+    <!-- Benefit 3 -->
+    <circle cx="640" cy="450" r="8" fill="#10B981" />
+    <text x="660" y="454" font-family="Arial, sans-serif" font-size="13" fill="#475569">🚀 Rapid Response</text>
+    <text x="660" y="472" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">Agile response to requirement changes</text>
+
+    <!-- Benefit 4 -->
+    <circle cx="820" cy="450" r="8" fill="#10B981" />
+    <text x="840" y="454" font-family="Arial, sans-serif" font-size="13" fill="#475569">🤝 Human-AI Collaboration</text>
+    <text x="840" y="472" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">AI assistance focuses on core creativity</text>
+
+    <!-- Benefit 5 -->
+    <circle cx="1000" cy="450" r="8" fill="#10B981" />
+    <text x="1020" y="454" font-family="Arial, sans-serif" font-size="13" fill="#475569">🛡️ Quality Assurance</text>
+    <text x="1020" y="472" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">Systematic review and validation</text>
+  </g>
+
+  <!-- Footer -->
+  <g>
+    <text x="700" y="550" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748B">
+      AI Continuous Iteration Model - Building Sustainable Product Capabilities
+    </text>
+  </g>
+</svg>
