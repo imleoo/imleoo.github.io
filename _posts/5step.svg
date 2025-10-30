@@ -1,0 +1,209 @@
+<svg viewBox="0 0 1400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义渐变和样式 -->
+  <defs>
+    <!-- 蓝色渐变 -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 绿色渐变 -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 橙色渐变 -->
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 紫色渐变 -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 青色渐变 -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891B2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 箭头标记 -->
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3B82F6" />
+    </marker>
+    
+    <!-- 循环箭头标记 -->
+    <marker id="arrowCycle" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L10,3 z" fill="#EF4444" />
+    </marker>
+    
+    <!-- 阴影效果 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="2" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 发光效果 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1400" height="600" fill="#F8FAFC"/>
+  
+  <!-- 标题 -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1E40AF" text-anchor="middle">
+    AI 开发工作流程 - 持续迭代模型
+  </text>
+  
+  <!-- 步骤1: 需求文档 -->
+  <g id="step1">
+    <rect x="50" y="120" width="220" height="140" fill="url(#blueGrad)" stroke="#1E40AF" stroke-width="3" rx="15" filter="url(#shadow)"/>
+    <text x="90" y="175" font-family="Arial, sans-serif" font-size="40" fill="white">📝</text>
+    <text x="150" y="165" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">需求文档</text>
+    <text x="150" y="190" font-family="Arial, sans-serif" font-size="12" fill="#E0E7FF">明确目标</text>
+    <text x="150" y="207" font-family="Arial, sans-serif" font-size="12" fill="#E0E7FF">定义范围</text>
+    <text x="150" y="224" font-family="Arial, sans-serif" font-size="12" fill="#E0E7FF">收集需求</text>
+    <text x="160" y="245" font-family="Arial, sans-serif" font-size="10" fill="#BFDBFE">Requirements</text>
+    
+    <circle cx="80" cy="145" r="18" fill="#1E40AF" stroke="white" stroke-width="3"/>
+    <text x="80" y="153" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">1</text>
+  </g>
+  
+  <!-- 箭头1→2 -->
+  <path d="M 270 190 L 320 190" stroke="#3B82F6" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  <circle cx="295" cy="190" r="3" fill="#3B82F6"/>
+  
+  <!-- 步骤2: AI生成 -->
+  <g id="step2">
+    <rect x="320" y="120" width="220" height="140" fill="url(#greenGrad)" stroke="#059669" stroke-width="3" rx="15" filter="url(#shadow)"/>
+    <text x="360" y="175" font-family="Arial, sans-serif" font-size="40" fill="white">🤖</text>
+    <text x="420" y="165" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">AI 生成</text>
+    <text x="420" y="190" font-family="Arial, sans-serif" font-size="12" fill="#D1FAE5">文档优化</text>
+    <text x="420" y="207" font-family="Arial, sans-serif" font-size="12" fill="#D1FAE5">快速原型</text>
+    <text x="420" y="224" font-family="Arial, sans-serif" font-size="12" fill="#D1FAE5">智能编码</text>
+    <text x="430" y="245" font-family="Arial, sans-serif" font-size="10" fill="#A7F3D0">AI Generation</text>
+    
+    <circle cx="350" cy="145" r="18" fill="#059669" stroke="white" stroke-width="3"/>
+    <text x="350" y="153" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">2</text>
+  </g>
+  
+  <!-- 箭头2→3 -->
+  <path d="M 540 190 L 590 190" stroke="#3B82F6" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  <circle cx="565" cy="190" r="3" fill="#3B82F6"/>
+  
+  <!-- 步骤3: 审查与改进 -->
+  <g id="step3">
+    <rect x="590" y="120" width="220" height="140" fill="url(#orangeGrad)" stroke="#D97706" stroke-width="3" rx="15" filter="url(#shadow)"/>
+    <text x="630" y="175" font-family="Arial, sans-serif" font-size="40" fill="white">🔍</text>
+    <text x="690" y="165" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">审查改进</text>
+    <text x="690" y="190" font-family="Arial, sans-serif" font-size="12" fill="#FEF3C7">代码审查</text>
+    <text x="690" y="207" font-family="Arial, sans-serif" font-size="12" fill="#FEF3C7">质量优化</text>
+    <text x="690" y="224" font-family="Arial, sans-serif" font-size="12" fill="#FEF3C7">性能调优</text>
+    <text x="700" y="245" font-family="Arial, sans-serif" font-size="10" fill="#FDE68A">Code Review</text>
+    
+    <circle cx="620" cy="145" r="18" fill="#D97706" stroke="white" stroke-width="3"/>
+    <text x="620" y="153" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">3</text>
+  </g>
+  
+  <!-- 箭头3→4 -->
+  <path d="M 810 190 L 860 190" stroke="#3B82F6" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  <circle cx="835" cy="190" r="3" fill="#3B82F6"/>
+  
+  <!-- 步骤4: 测试与验证 -->
+  <g id="step4">
+    <rect x="860" y="120" width="220" height="140" fill="url(#purpleGrad)" stroke="#7C3AED" stroke-width="3" rx="15" filter="url(#shadow)"/>
+    <text x="900" y="175" font-family="Arial, sans-serif" font-size="40" fill="white">✅</text>
+    <text x="960" y="165" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">测试验证</text>
+    <text x="960" y="190" font-family="Arial, sans-serif" font-size="12" fill="#EDE9FE">单元测试</text>
+    <text x="960" y="207" font-family="Arial, sans-serif" font-size="12" fill="#EDE9FE">集成测试</text>
+    <text x="960" y="224" font-family="Arial, sans-serif" font-size="12" fill="#EDE9FE">冒烟测试</text>
+    <text x="970" y="245" font-family="Arial, sans-serif" font-size="10" fill="#DDD6FE">Testing</text>
+    
+    <circle cx="890" cy="145" r="18" fill="#7C3AED" stroke="white" stroke-width="3"/>
+    <text x="890" y="153" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">4</text>
+  </g>
+  
+  <!-- 箭头4→5 -->
+  <path d="M 1080 190 L 1130 190" stroke="#3B82F6" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  <circle cx="1105" cy="190" r="3" fill="#3B82F6"/>
+  
+  <!-- 步骤5: 知识沉淀 -->
+  <g id="step5">
+    <rect x="1130" y="120" width="220" height="140" fill="url(#cyanGrad)" stroke="#0891B2" stroke-width="3" rx="15" filter="url(#shadow)"/>
+    <text x="1170" y="175" font-family="Arial, sans-serif" font-size="40" fill="white">📚</text>
+    <text x="1230" y="165" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">知识沉淀</text>
+    <text x="1230" y="190" font-family="Arial, sans-serif" font-size="12" fill="#CFFAFE">文档归档</text>
+    <text x="1230" y="207" font-family="Arial, sans-serif" font-size="12" fill="#CFFAFE">经验总结</text>
+    <text x="1230" y="224" font-family="Arial, sans-serif" font-size="12" fill="#CFFAFE">最佳实践</text>
+    <text x="1240" y="245" font-family="Arial, sans-serif" font-size="10" fill="#A5F3FC">Knowledge</text>
+    
+    <circle cx="1160" cy="145" r="18" fill="#0891B2" stroke="white" stroke-width="3"/>
+    <text x="1160" y="153" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">5</text>
+  </g>
+  
+  <!-- 循环回到步骤1的箭头 -->
+  <g id="cycle-arrow">
+    <!-- 大弧线路径 - 从右到左的回路,连接到步骤1正下方 -->
+    <path d="M 1240 260 L 1240 330 L 160 330 L 160 260" 
+          stroke="#EF4444" 
+          stroke-width="4" 
+          fill="none" 
+          marker-end="url(#arrowCycle)"
+          stroke-dasharray="10,5"
+          filter="url(#glow)"/>
+    
+    <!-- 循环标签 -->
+    <rect x="620" y="350" width="160" height="80" fill="#FEE2E2" stroke="#EF4444" stroke-width="2" rx="12" filter="url(#shadow)"/>
+    <text x="700" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#EF4444" text-anchor="middle">♻️ 持续迭代循环</text>
+    <text x="700" y="402" font-family="Arial, sans-serif" font-size="12" fill="#DC2626" text-anchor="middle">Continuous Iteration</text>
+    <text x="700" y="420" font-family="Arial, sans-serif" font-size="11" fill="#DC2626" text-anchor="middle">从知识沉淀反馈更新需求文档</text>
+    
+    <!-- 连接线到循环路径 -->
+    <path d="M 700 350 L 700 330" stroke="#EF4444" stroke-width="2" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- 底部核心价值说明 -->
+  <g id="bottom-notes">
+    <rect x="50" y="470" width="1300" height="100" fill="white" stroke="#CBD5E1" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="700" y="495" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1E40AF" text-anchor="middle">核心价值</text>
+    
+    <!-- 分隔线 -->
+    <line x1="80" y1="505" x2="1320" y2="505" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- 价值点 - 横向排列 -->
+    <text x="100" y="530" font-family="Arial, sans-serif" font-size="13" fill="#475569">💡 提升效率</text>
+    <text x="100" y="548" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">快速交付高质量代码</text>
+    
+    <text x="280" y="530" font-family="Arial, sans-serif" font-size="13" fill="#475569">🎯 保证质量</text>
+    <text x="280" y="548" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">多重审查确保可靠性</text>
+    
+    <text x="460" y="530" font-family="Arial, sans-serif" font-size="13" fill="#475569">🔄 持续优化</text>
+    <text x="460" y="548" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">循环迭代不断改进</text>
+    
+    <text x="640" y="530" font-family="Arial, sans-serif" font-size="13" fill="#475569">📈 知识积累</text>
+    <text x="640" y="548" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">经验沉淀形成资产</text>
+    
+    <text x="820" y="530" font-family="Arial, sans-serif" font-size="13" fill="#475569">🚀 快速响应</text>
+    <text x="820" y="548" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">敏捷应对需求变化</text>
+    
+    <text x="1000" y="530" font-family="Arial, sans-serif" font-size="13" fill="#475569">🤝 人机协同</text>
+    <text x="1000" y="548" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">AI辅助专注核心创造</text>
+  </g>
+</svg>
