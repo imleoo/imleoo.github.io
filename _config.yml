@@ -9,6 +9,7 @@ lang: "en"
 timezone: "Asia/Shanghai"
 
 # Build settings
+future: true
 markdown: kramdown
 highlighter: rouge
 lsi: false
