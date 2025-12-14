@@ -318,3 +318,13 @@ class WeatherApp extends StatelessWidget {
 6. **示例要典型**：展示期望的输出格式和内容
 
 掌握CRISPE框架，让你的AI对话从"试探性提问"升级为"精准任务下达"，显著提升AI输出质量和工作效率。
+
+---
+
+## 📎 附件下载
+
+**CRISPE框架完整模板** - 包含详细的角色定义、任务描述、输入示例、执行步骤、参数约束和参考模板。
+
+[🔗 下载 CRISPE Prompt框架模板](/downloads/crispe-prompt-framework-template.md)
+
+该模板文件包含了本文中所有示例的完整版本，以及更多实用的CRISPE提示词模板，可以直接复制使用并根据具体需求进行修改。
