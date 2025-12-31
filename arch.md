@@ -4,16 +4,7 @@
 本项目是一个基于 Jekyll 的静态网站，主要用于个人博客、项目展示和联系方式等功能。通过 Jekyll 的模板引擎和 Markdown 支持，实现了内容的快速生成和发布。
 
 ## 2. 架构图
-```mermaid
-graph TD
-    A[_config.yml] --> B[Jekyll 配置]
-    B --> C[生成静态站点]
-    D[_posts] --> C
-    E[_layouts] --> C
-    F[_includes] --> C
-    G[assets] --> C
-    H[_site] --> I[部署]
-```
+![项目架构图](/assets/images/project-architecture.svg)
 
 ## 3. 模块说明
 ### 核心配置文件

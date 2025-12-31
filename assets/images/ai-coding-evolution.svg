@@ -1,0 +1,248 @@
+<svg width="1000" height="450" viewBox="0 0 1000 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1000" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="0.5" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Card gradients -->
+    <linearGradient id="cardGrad1" x1="0" y1="0" x2="0" y2="1" gradientTransform="rotate(180)">
+      <stop offset="0" stop-color="#009E9F" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#009E9F" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Progress gradient -->
+    <linearGradient id="progressGrad" x1="100" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#009E9F"/>
+      <stop offset="0.33" stop-color="#6366F1"/>
+      <stop offset="0.66" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feFlood flood-color="#009E9F" flood-opacity="0.4"/>
+      <feComposite in2="coloredBlur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feFlood flood-color="#8B5CF6" flood-opacity="0.5"/>
+      <feComposite in2="coloredBlur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feFlood flood-color="#EC4899" flood-opacity="0.6"/>
+      <feComposite in2="coloredBlur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="0.5" fill="#38BDF8" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="450" rx="20" fill="url(#bgGrad)"/>
+  <rect width="1000" height="450" rx="20" fill="url(#grid)"/>
+
+  <!-- Header -->
+  <g transform="translate(50, 45)">
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#F8FAFC">
+      AI Coding 进化史
+    </text>
+    <text y="28" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#94A3B8">
+      从代码补全到自主 Agent 的范式转移 · 2021-2025
+    </text>
+    <!-- Accent line -->
+    <rect y="42" width="60" height="3" rx="1.5" fill="url(#progressGrad)"/>
+  </g>
+
+  <!-- Timeline base -->
+  <line x1="100" y1="280" x2="900" y2="280" stroke="#334155" stroke-width="2" opacity="0.4"/>
+  <line x1="100" y1="280" x2="900" y2="280" stroke="url(#progressGrad)" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+
+  <!-- Stage 1: 2021 代码补全 -->
+  <g transform="translate(180, 280)">
+    <!-- Node -->
+    <circle r="20" fill="#009E9F" fill-opacity="0.15"/>
+    <circle r="14" fill="#009E9F" fill-opacity="0.3"/>
+    <circle r="8" fill="#009E9F" filter="url(#softShadow)"/>
+    <circle r="4" fill="#CCFBF1"/>
+
+    <!-- Year badge -->
+    <rect x="-24" y="-60" width="48" height="22" rx="11" fill="#009E9F" fill-opacity="0.2" stroke="#009E9F" stroke-width="1"/>
+    <text y="-44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#5EEAD4">2021</text>
+
+    <!-- Card -->
+    <g transform="translate(-70, 40)" filter="url(#cardShadow)">
+      <rect width="140" height="70" rx="12" fill="#0F172A" stroke="#009E9F" stroke-width="1.5" stroke-opacity="0.4"/>
+      <rect width="140" height="4" rx="2" fill="#009E9F" fill-opacity="0.6"/>
+
+      <!-- Icon -->
+      <g transform="translate(15, 30)">
+        <path d="M0 -10 L-6 0 L0 10 M12 -10 L6 0 L12 10 M5 -14 L7 14" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </g>
+
+      <!-- Text -->
+      <text x="55" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">代码补全</text>
+      <text x="55" y="46" font-family="system-ui, sans-serif" font-size="9" fill="#64748B">Copilot · TabNine</text>
+      <text x="55" y="59" font-family="system-ui, sans-serif" font-size="8" fill="#475569">单行建议 · 被动响应</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1-2 -->
+  <path d="M280 280 L320 280" stroke="#475569" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+  <path d="M320 277 L326 280 L320 283" stroke="#6366F1" stroke-width="1.5" fill="none"/>
+
+  <!-- Stage 2: 2023 聊天助手 -->
+  <g transform="translate(380, 280)">
+    <!-- Node -->
+    <circle r="22" fill="#6366F1" fill-opacity="0.15"/>
+    <circle r="16" fill="#6366F1" fill-opacity="0.3"/>
+    <circle r="9" fill="#6366F1" filter="url(#softShadow)"/>
+    <circle r="4" fill="#E0E7FF"/>
+
+    <!-- Year badge -->
+    <rect x="-24" y="-60" width="48" height="22" rx="11" fill="#6366F1" fill-opacity="0.2" stroke="#6366F1" stroke-width="1"/>
+    <text y="-44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#A5B4FC">2023</text>
+
+    <!-- Card (above) -->
+    <g transform="translate(-75, -160)" filter="url(#cardShadow)">
+      <rect width="150" height="75" rx="12" fill="#0F172A" stroke="#6366F1" stroke-width="1.5" stroke-opacity="0.4"/>
+      <rect width="150" height="4" rx="2" fill="#6366F1" fill-opacity="0.6"/>
+
+      <!-- Icon -->
+      <g transform="translate(18, 28)">
+        <rect x="-10" y="-8" width="20" height="18" rx="4" fill="#A5B4FC" fill-opacity="0.3"/>
+        <circle cx="-4" cy="-2" r="1.5" fill="#818CF8"/>
+        <circle cx="0" cy="-2" r="1.5" fill="#818CF8"/>
+        <circle cx="4" cy="-2" r="1.5" fill="#818CF8"/>
+      </g>
+
+      <!-- Text -->
+      <text x="58" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">聊天助手</text>
+      <text x="58" y="46" font-family="system-ui, sans-serif" font-size="9" fill="#64748B">ChatGPT · Claude</text>
+      <text x="58" y="59" font-family="system-ui, sans-serif" font-size="8" fill="#475569">对话交互 · RAG 增强</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2-3 -->
+  <path d="M480 280 L520 280" stroke="#475569" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+  <path d="M520 277 L526 280 L520 283" stroke="#8B5CF6" stroke-width="1.5" fill="none"/>
+
+  <!-- Stage 3: 2024 智能Agent -->
+  <g transform="translate(580, 280)">
+    <!-- Node -->
+    <circle r="22" fill="#8B5CF6" fill-opacity="0.15"/>
+    <circle r="16" fill="#8B5CF6" fill-opacity="0.3"/>
+    <circle r="9" fill="#8B5CF6" filter="url(#softShadow)"/>
+    <circle r="4" fill="#EDE9FE"/>
+
+    <!-- Year badge -->
+    <rect x="-24" y="-60" width="48" height="22" rx="11" fill="#8B5CF6" fill-opacity="0.2" stroke="#8B5CF6" stroke-width="1"/>
+    <text y="-44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#C4B5FD">2024</text>
+
+    <!-- Card -->
+    <g transform="translate(-75, 40)" filter="url(#cardShadow)">
+      <rect width="150" height="70" rx="12" fill="#0F172A" stroke="#8B5CF6" stroke-width="1.5" stroke-opacity="0.4"/>
+      <rect width="150" height="4" rx="2" fill="#8B5CF6" fill-opacity="0.6"/>
+
+      <!-- Icon -->
+      <g transform="translate(18, 25)">
+        <path d="M0 -12 L4 -4 L12 -4 L6 2 L8 10 L0 6 L-8 10 L-6 2 L-12 -4 L-4 -4 Z" fill="#C4B5FD" fill-opacity="0.4"/>
+        <path d="M0 -8 L3 -2 L9 -2 L4 3 L6 8 L0 5 L-6 8 L-4 3 L-9 -2 L-3 -2 Z" fill="#A78BFA"/>
+      </g>
+
+      <!-- Text -->
+      <text x="58" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">智能 Agent</text>
+      <text x="58" y="46" font-family="system-ui, sans-serif" font-size="9" fill="#64748B">Cursor · Windsurf</text>
+      <text x="58" y="59" font-family="system-ui, sans-serif" font-size="8" fill="#475569">代码库理解 · 重构</text>
+    </g>
+  </g>
+
+  <!-- Arrow 3-4 -->
+  <path d="M680 280 L720 280" stroke="#475569" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+  <path d="M720 277 L726 280 L720 283" stroke="#EC4899" stroke-width="1.5" fill="none"/>
+
+  <!-- Stage 4: 2025 自主特工 -->
+  <g transform="translate(820, 280)">
+    <!-- Node with pulse -->
+    <circle r="30" fill="#EC4899" fill-opacity="0.08"/>
+    <circle r="24" fill="#EC4899" fill-opacity="0.12"/>
+    <circle r="18" fill="#EC4899" fill-opacity="0.25"/>
+    <circle r="11" fill="#EC4899" filter="url(#softShadow)"/>
+    <circle r="5" fill="#FFE4E6"/>
+
+    <!-- Year badge -->
+    <rect x="-28" y="-60" width="56" height="24" rx="12" fill="#EC4899" fill-opacity="0.25" stroke="#EC4899" stroke-width="1.5"/>
+    <text y="-43" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#FBCFE8">2025</text>
+
+    <!-- Card (above, larger) -->
+    <g transform="translate(-95, -175)" filter="url(#cardShadow)">
+      <rect width="190" height="85" rx="14" fill="#0F172A" stroke="#EC4899" stroke-width="2" stroke-opacity="0.5"/>
+      <rect width="190" height="5" rx="2.5" fill="#EC4899" fill-opacity="0.7"/>
+
+      <!-- Icon: Robot head -->
+      <g transform="translate(28, 35)">
+        <rect x="-14" y="-12" width="28" height="20" rx="6" fill="#FBCFE8" fill-opacity="0.2"/>
+        <rect x="-10" y="-10" width="20" height="14" rx="4" fill="#FFE4E6"/>
+        <circle cx="-5" cy="-4" r="2.5" fill="#EC4899"/>
+        <circle cx="5" cy="-4" r="2.5" fill="#EC4899"/>
+        <rect x="-4" y="0" width="8" height="2" rx="1" fill="#EC4899"/>
+        <!-- Antenna glow -->
+        <circle cx="0" cy="-14" r="2" fill="#EC4899" fill-opacity="0.6"/>
+      </g>
+
+      <!-- Text -->
+      <text x="75" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#FDF2F8">Agentic Coding</text>
+      <text x="75" y="50" font-family="system-ui, sans-serif" font-size="9" fill="#64748B">Claude Code · Subagent</text>
+      <text x="75" y="66" font-family="system-ui, sans-serif" font-size="9" fill="#475569">规划 · 执行 · 回滚</text>
+    </g>
+  </g>
+
+  <!-- Bottom legend -->
+  <g transform="translate(50, 420)">
+    <rect width="8" height="8" rx="2" fill="#009E9F"/>
+    <text x="14" y="7" font-family="system-ui, sans-serif" font-size="9" fill="#64748B">补全</text>
+
+    <rect x="50" width="8" height="8" rx="2" fill="#6366F1"/>
+    <text x="64" y="7" font-family="system-ui, sans-serif" font-size="9" fill="#64748B">对话</text>
+
+    <rect x="100" width="8" height="8" rx="2" fill="#8B5CF6"/>
+    <text x="114" y="7" font-family="system-ui, sans-serif" font-size="9" fill="#64748B">助手</text>
+
+    <rect x="150" width="8" height="8" rx="2" fill="#EC4899"/>
+    <text x="164" y="7" font-family="system-ui, sans-serif" font-size="9" fill="#64748B">自主</text>
+
+    <text x="900" y="7" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#475569">DDAD = 文档驱动 AI 开发</text>
+  </g>
+
+  <!-- Corner accent -->
+  <path d="M960 410 L1000 410 L1000 450" stroke="url(#progressGrad)" stroke-width="3" fill="none" opacity="0.5"/>
+</svg>
