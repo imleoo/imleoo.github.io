@@ -47,14 +47,12 @@ layout: home
   </div>
   
   <div class="skills-container">
-    <div class="skill-tag">🤖 AI & Machine Learning</div>
-    <div class="skill-tag">📊 Big Data Analytics</div>
-    <div class="skill-tag">☁️ Cloud Architecture</div>
-    <div class="skill-tag">🎥 Video Streaming</div>
-    <div class="skill-tag">🛡️ Risk Management</div>
-    <div class="skill-tag">⚡ Real-time Processing</div>
-    <div class="skill-tag">🔍 Predictive Analytics</div>
-    <div class="skill-tag">🌐 CDN Technology</div>
+    <div class="skill-tag">🤖 AI & ML</div>
+    <div class="skill-tag">📊 Big Data</div>
+    <div class="skill-tag">☁️ Cloud Arch</div>
+    <div class="skill-tag">🎥 Video Systems</div>
+    <div class="skill-tag">🛡️ Risk Mgmt</div>
+    <div class="skill-tag">⚡ Real-time Computing</div>
   </div>
 </div>
 
@@ -80,103 +78,22 @@ layout: home
   </div>
 </div>
 
-<!-- Current Focus -->
-<div class="container" style="padding: 4rem 2rem;">
-  <div class="text-center mb-5">
-    <h2 class="section-title">Current Focus</h2>
-    <p class="section-subtitle">Leading innovation in AI-powered solutions</p>
-  </div>
-  
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-icon">🚀</div>
-          <h3 class="card-title">AiSEO.icu</h3>
-        </div>
-        <p><strong>Founder & CEO</strong> | 2025 - Present</p>
-        <p>Building next-generation AI-powered SEO and digital marketing infrastructure for global businesses.</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-icon">🎯</div>
-          <h3 class="card-title">Technical Excellence</h3>
-        </div>
-        <p>Focusing on scalable AI solutions, cloud architecture optimization, and cutting-edge machine learning applications.</p>
-      </div>
-    </div>
+<!-- Current Focus Tagline -->
+<div class="container" style="padding: 2rem 2rem; text-align: center; background: var(--bg-secondary);">
+  <h2 class="section-title">🚀 Currently Building AiSEO.icu</h2>
+  <p class="section-subtitle">Next-generation AI-powered SEO infrastructure for global businesses</p>
+</div>
+
+<!-- Action Bar -->
+<div class="container" style="padding: 3rem 2rem; text-align: center;">
+  <p class="section-subtitle">Explore my professional journey and technical achievements</p>
+  <div class="hero-buttons">
+    <a href="/experience/" class="btn-secondary">Professional Timeline</a>
+    <a href="/projects/" class="btn-secondary">Technical Projects</a>
+    <a href="/contact/" class="btn-primary">Get In Touch</a>
   </div>
 </div>
 
-<!-- Recent Achievements -->
-<div class="container" style="padding: 4rem 2rem; background: var(--bg-secondary);">
-  <div class="text-center mb-5">
-    <h2 class="section-title">Recent Achievements</h2>
-    <p class="section-subtitle">Delivering impactful technical solutions</p>
-  </div>
-  
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-icon">🏛️</div>
-          <h3 class="card-title">Cross-border Trade Compliance</h3>
-        </div>
-        <ul>
-          <li>95%+ compliance risk identification accuracy</li>
-          <li>Transformer & LSTM algorithms implementation</li>
-          <li>99.93% HS code classification accuracy</li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-icon">💰</div>
-          <h3 class="card-title">Financial Risk Modeling</h3>
-        </div>
-        <ul>
-          <li>Trade finance risk models for banking</li>
-          <li>Fraud detection & anti-money laundering</li>
-          <li>Customs data integration for loans</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Contact Section -->
-<div id="contact" class="container" style="padding: 4rem 2rem;">
-  <div class="text-center mb-5">
-    <h2 class="section-title">Let's Connect</h2>
-    <p class="section-subtitle">Open to collaboration and opportunities</p>
-  </div>
-  
-  <div class="contact-grid">
-    <div class="contact-item">
-      <div class="contact-icon">💻</div>
-      <h3>GitHub</h3>
-      <a href="https://github.com/imleoo" target="_blank">github.com/imleoo</a>
-    </div>
-    <div class="contact-item">
-      <div class="contact-icon">🌐</div>
-      <h3>Website</h3>
-      <a href="https://aiseo.icu" target="_blank">aiseo.icu</a>
-    </div>
-    <div class="contact-item">
-      <div class="contact-icon">📧</div>
-      <h3>Email</h3>
-      <a href="mailto:imleoo@gmail.com">imleoo@gmail.com</a>
-    </div>
-    <div class="contact-item">
-      <div class="contact-icon">💬</div>
-      <h3>WeChat</h3>
-      <p>leoobai</p>
-    </div>
-  </div>
-</div>
 
 <!-- Custom Styles -->
 <style>

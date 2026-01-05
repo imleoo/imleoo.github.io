@@ -7,23 +7,19 @@ description: "Get in touch with Leoo Bai for business inquiries, collaboration o
 
 # Get In Touch
 
-I'm always excited to connect with fellow technology leaders, AI specialists, entrepreneurs, and potential collaborators. With over 10 years of experience in internet R&D management, I'm passionate about building innovative solutions that bridge cutting-edge technology with practical business applications.
+I'm always excited to connect with fellow technology leaders, entrepreneurs, and potential collaborators.
 
-## Business Inquiries
-
-For business partnerships, consulting opportunities, or investment discussions:
+## Contact Information
 
 **📧 Email:** [imleoo@gmail.com](mailto:imleoo@gmail.com)  
-  
-**🌐 Website:** [aiseo.icu](https://aiseo.icu)
-
-## Professional Network
-
-Let's connect on professional platforms:
-
+**🌐 Website:** [aiseo.icu](https://aiseo.icu)  
 **🐦 Twitter:** [@leoobai](https://twitter.com/leoobai)  
 **💻 GitHub:** [github.com/imleoo](https://github.com/imleoo)  
 **💬 WeChat:** leoobai
+
+**Location:** Beijing, China (GMT+8)  
+**Languages:** Mandarin (Native), English (Professional)
+
 
 ## Collaboration Opportunities
 

@@ -12,51 +12,16 @@ description: "Explore Leoo Bai's professional journey including leadership roles
 ### Founder & CEO
 **Technology Innovation Company** | *2019 - Present*
 
-Building innovative AI technology solutions across multiple domains, from agricultural quality analysis to digital marketing infrastructure.
+Building innovative AI technology solutions across multiple domains.
 
-**Evolution & Growth:**
-- **2019-2021**: Pioneered AI-powered agricultural quality analysis using near-infrared spectroscopy
-- **2021-2023**: Expanded into data governance and enterprise AI solutions
-- **2023-2025**: Developed comprehensive AI risk assessment and compliance systems
-- **2025-Present**: Launched AiSEO.icu - next-generation AI-powered SEO and digital marketing infrastructure
+**Key Leadership Highlights:**
+- **Founding & Vision**: Founded and scaled multiple AI ventures from initial hardware prototypes to global SaaS platforms.
+- **Team Growth**: Built and managed multidisciplinary technical teams (5 to 15+ engineers).
+- **Domain Expansion**: Successfully led product development in Agriculture AI, Enterprise Data Governance, and Fintech Risk Compliance.
+- **Latest Venture**: Currently spearheading **AiSEO.icu**, an AI-powered SEO infrastructure for global markets.
 
-**Key Achievements Across Phases:**
-
-**🔬 Agricultural AI Innovation (2019-2021)**
-- Developed intelligent analysis systems for fruit quality assessment
-- Created custom hardware with near-infrared + infrared imaging capabilities
-- Successfully analyzed peaches, apples, and strawberries for quality, sugar content, and ripeness
-- Built real-time monitoring systems for decay detection
-- Integrated hardware and software solutions with machine learning algorithms
-
-**📊 Data Governance & Enterprise AI (2021-2023)**
-- Designed and implemented data governance solutions for enterprise clients
-- Led technical solution development for 10+ major enterprise clients including Fortune 500 companies
-- Built OneID solution architecture for financial, real estate, and retail customers
-- Developed Customer Data Platform (CDP) frameworks for leading corporations
-- Reduced data processing costs by 40% on average for enterprise clients
-
-**🛡️ AI Risk Assessment & Compliance (2023-2025)**
-- Developed AI-powered risk assessment models achieving 95%+ compliance risk identification
-- Implemented Transformer and LSTM algorithms for tax risk identification with 99.93% HS code accuracy
-- Created trade finance risk models for banking institutions for fraud detection and anti-money laundering
-- Built and managed technical teams of 15+ engineers
-- Architected scalable AI/ML systems for financial services
-- Established data governance and model validation frameworks
-
-**🚀 AiSEO.icu - AI-Powered Digital Marketing (2025-Present)**
-- Building next-generation AI-powered SEO and digital marketing infrastructure
-- Focusing on innovative solutions that bridge cutting-edge AI technology with practical marketing applications
-- Developing scalable AI solutions for global businesses
-- Creating intelligent content optimization and search engine algorithms
-
-**Technical Leadership & Innovation:**
-- Built and managed technical teams ranging from 5 to 15+ engineers across different phases
-- Architected scalable AI/ML systems for multiple industries (agriculture, finance, marketing)
-- Established comprehensive data governance and model validation frameworks
-- Coordinated with regulatory bodies, financial institutions, and enterprise clients
-- Successfully transitioned from hardware-based AI solutions to pure software and SaaS models
-- Maintained focus on practical, business-driven AI applications across all ventures
+> [!TIP]
+> For technical implementation details and specific model performance metrics, see my [Projects](/projects/) page.
 
 ---
 
@@ -67,17 +32,14 @@ Building innovative AI technology solutions across multiple domains, from agricu
 
 Led technology innovation for one of China's largest internet television platforms, serving 130+ million users.
 
-**Major Accomplishments:**
-- **Internet TV Platform**: Led new platform development supporting major smart TV and mobile platforms
-- **CCTV Video App**: Built platform supporting 80 million concurrent users during World Cup
-- **Video Restoration**: Led team processing 8 million hours of historical video content for HD conversion
-- **Big Data Platform**: Developed user behavior analysis and profiling systems for 130M+ users
+**Scale & Leadership Impact:**
+- **Team**: Managed a high-performing technical team of 50+ engineers
+- **Infrastructure**: Supported 130M+ active users with 99.9% uptime during global events like the World Cup
+- **Optimization**: Reduced content distribution time from 45 to 8 minutes through platform improvements
+- **Big Data**: Developed user behavior profiling systems processing massive-scale datasets
 
-**Scale & Impact:**
-- Managed technical team of 50+ engineers
-- Supported platform with 130 million+ active users
-- Achieved 99.9% platform uptime during major events
-- Reduced content distribution time from 45 to 8 minutes
+*See technical architecture details in [Video Platform Project](/projects/#large-scale-video-platform-architecture).*
+
 
 ### Technical Vice President
 **3D Technology Company** | *2014 - 2017**
