@@ -12,3 +12,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-archives"
 end
+
+group :development do
+  gem "ruby-lsp", require: false
+end
