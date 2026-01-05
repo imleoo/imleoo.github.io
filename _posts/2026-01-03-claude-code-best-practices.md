@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Claude Code 最佳实践：来自创始人的使用心得"
-date: 2025-01-03 12:00:00 +0800
+date: 2026-01-03 12:00:00 +0800
 categories: [开发工具, AI编程]
 tags: [Claude Code, AI编程, 最佳实践, 工作流优化]
 description: "Claude Code 创始人 Boris Cherny 分享了他如何高效使用 Claude Code 的13个最佳实践技巧"
