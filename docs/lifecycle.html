@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理健康问题儿童家长全生命周期支持分析报告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Custom Font Support */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #fcfcfc;
+            color: #333;
+        }
+
+        /* Chart Container Rules - MANDATORY */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            height: 300px;
+            max-height: 400px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+
+        /* Custom Scrollbar for side panels */
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* Interactive Timeline Styles */
+        .timeline-node {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .timeline-node.active {
+            transform: scale(1.1);
+            font-weight: 700;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card-hover {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <!-- Chosen Palette: Warm Support (Stone-50 background, Slate-800 text, Teal-600 accents, Amber-500 highlights) -->
+    <!-- Application Structure Plan: The app is designed as a 'Lifecycle Journey Dashboard'. 
+         1. Top Navigation: A linear timeline represents the child's growth stages. This is the primary controller.
+         2. Dynamic Content Area: Updates based on the timeline selection. It's split into 'Qualitative Reality' (Text) and 'Quantitative Impact' (Charts).
+         3. Action Modules: Interactive checklists and strategy cards that provide actionable advice for the specific stage.
+         4. Why this structure? Parenting a child with mental health issues is a temporal journey with distinct phases. A timeline-based structure allows parents to locate their current reality or anticipate future needs, reducing anxiety through structured information. -->
+    <!-- Visualization & Content Choices:
+         1. Line Chart (Stress Trajectory): Goals: Inform & Compare. Shows how parental stress evolves vs. child's stability. Justification: Validates parents' feelings that stress fluctuates rather than disappears. Library: Chart.js.
+         2. Radar Chart (Burden Analysis): Goal: Relationships. Shows the multidimensional impact (Financial, Social, Emotional, Physical) per stage. Justification: Helps parents identify which area needs more support resources. Library: Chart.js.
+         3. Dynamic Cards: Goal: Organize. Breaks down complex tasks into 'Medical', 'School', and 'Home' categories. Method: HTML/JS Injection. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="bg-stone-50 text-slate-800 selection:bg-teal-100 selection:text-teal-900">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                    <span>Ψ</span>
+                </div>
+                <h1 class="text-xl font-bold text-slate-800 tracking-tight">心理健康家庭支持系统 <span class="text-sm font-normal text-slate-500 hidden sm:inline">| 全生命周期分析报告</span></h1>
+            </div>
+            <div class="text-sm text-stone-500">
+                <span id="current-stage-display" class="font-semibold text-teal-700 bg-teal-50 px-3 py-1 rounded-full">当前阶段：预警与发病期</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+        <!-- Introduction Context -->
+        <section class="max-w-4xl mx-auto text-center space-y-4 mb-10">
+            <h2 class="text-3xl font-bold text-slate-900">家庭照护者的全生命周期旅程</h2>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                本交互式报告旨在解析心理健康问题儿童家长在不同阶段面临的独特挑战。
+                通过点击下方的时间轴，您可以探索从<b>早期预警</b>到<b>成年安置</b>的完整路径，获取针对性的心理支持、资源配置建议及压力管理策略。
+            </p>
+        </section>
+
+        <!-- Interactive Lifecycle Timeline -->
+        <nav aria-label="Lifecycle Timeline" class="w-full overflow-x-auto pb-4 custom-scroll">
+            <div class="min-w-[800px] flex justify-between items-center relative px-10" id="timeline-container">
+                <!-- Connecting Line -->
+                <div class="absolute top-1/2 left-0 w-full h-1 bg-stone-200 -z-10 transform -translate-y-1/2"></div>
+                
+                <!-- Stages generated by JS -->
+            </div>
+        </nav>
+
+        <!-- Dynamic Dashboard Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- LEFT COLUMN: Qualitative Analysis (Content) -->
+            <div class="lg:col-span-7 space-y-6">
+                
+                <!-- Stage Header -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-stone-100 fade-in" id="stage-header-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="text-2xl font-bold text-teal-800" id="stage-title">阶段加载中...</h2>
+                        <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded text-sm font-medium" id="stage-duration">时长</span>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed" id="stage-description">
+                        描述内容...
+                    </p>
+                    
+                    <!-- Core Role Tag -->
+                    <div class="bg-slate-50 rounded-lg p-4 border-l-4 border-teal-500">
+                        <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wider mb-1">家长的核心角色</h4>
+                        <p class="text-lg font-medium text-slate-800" id="parent-role">角色定义</p>
+                    </div>
+                </div>
+
+                <!-- Actionable Tasks Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Emotional Tasks -->
+                    <div class="bg-white rounded-xl p-5 shadow-sm border border-stone-100 card-hover fade-in">
+                        <div class="flex items-center gap-2 mb-3 text-rose-600">
+                            <span class="text-xl">❤️</span>
+                            <h3 class="font-bold">情感挑战</h3>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600" id="emotional-list">
+                            <!-- Items via JS -->
+                        </ul>
+                    </div>
+                    
+                    <!-- Practical Tasks -->
+                    <div class="bg-white rounded-xl p-5 shadow-sm border border-stone-100 card-hover fade-in">
+                        <div class="flex items-center gap-2 mb-3 text-blue-600">
+                            <span class="text-xl">📋</span>
+                            <h3 class="font-bold">关键任务</h3>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600" id="practical-list">
+                            <!-- Items via JS -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Strategy Section -->
+                <div class="bg-teal-50 rounded-xl p-6 border border-teal-100 fade-in">
+                    <h3 class="text-lg font-bold text-teal-900 mb-3">🛡️ 应对策略建议</h3>
+                    <p class="text-teal-800 text-sm mb-4">基于当前阶段的专家建议：</p>
+                    <div id="strategy-content" class="text-teal-900 space-y-2 text-sm leading-relaxed">
+                        <!-- Strategy via JS -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Quantitative Analysis (Charts) -->
+            <div class="lg:col-span-5 space-y-6">
+                
+                <!-- Chart 1: Stress vs Functioning -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+                    <div class="mb-4">
+                        <h3 class="font-bold text-slate-800 text-lg">家庭压力与康复轨迹</h3>
+                        <p class="text-xs text-slate-500 mt-1">展示家长压力水平与孩子社会功能的典型演变关系</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="trajectoryChart"></canvas>
+                    </div>
+                    <div class="mt-4 p-3 bg-stone-50 rounded text-xs text-slate-500 text-center">
+                        <span class="inline-block w-2 h-2 rounded-full bg-rose-400 mr-1"></span> 家长压力指数
+                        <span class="inline-block w-2 h-2 rounded-full bg-teal-400 ml-3 mr-1"></span> 孩子社会功能
+                    </div>
+                </div>
+
+                <!-- Chart 2: Burden Distribution -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+                    <div class="mb-4">
+                        <h3 class="font-bold text-slate-800 text-lg">照护负担维度分析</h3>
+                        <p class="text-xs text-slate-500 mt-1">当前阶段家庭资源的主要消耗方向</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="burdenChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <p id="burden-insight" class="text-sm font-medium text-slate-700 italic">"在此阶段，医疗支出通常是主要压力源。"</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Comparative Table Section -->
+        <section class="mt-12 bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden">
+            <div class="p-6 bg-slate-50 border-b border-stone-200">
+                <h3 class="text-lg font-bold text-slate-800">全周期关键指标对比</h3>
+                <p class="text-sm text-slate-500">快速概览各阶段的重点差异</p>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left text-slate-600">
+                    <thead class="text-xs text-slate-700 uppercase bg-slate-50 border-b border-stone-200">
+                        <tr>
+                            <th scope="col" class="px-6 py-4 font-bold">维度</th>
+                            <th scope="col" class="px-6 py-4">预警期</th>
+                            <th scope="col" class="px-6 py-4">诊断与急性期</th>
+                            <th scope="col" class="px-6 py-4">稳定与康复期</th>
+                            <th scope="col" class="px-6 py-4">长期管理期</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b hover:bg-slate-50">
+                            <th scope="row" class="px-6 py-4 font-bold text-slate-900 whitespace-nowrap">主要情绪</th>
+                            <td class="px-6 py-4">困惑、否认</td>
+                            <td class="px-6 py-4 text-rose-600 font-medium">恐惧、崩溃</td>
+                            <td class="px-6 py-4">疲惫、谨慎乐观</td>
+                            <td class="px-6 py-4 text-teal-600">接纳、平静</td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-slate-50">
+                            <th scope="row" class="px-6 py-4 font-bold text-slate-900 whitespace-nowrap">医疗重点</th>
+                            <td class="px-6 py-4">识别症状</td>
+                            <td class="px-6 py-4">控制危急症状</td>
+                            <td class="px-6 py-4">维持治疗依从性</td>
+                            <td class="px-6 py-4">预防复发</td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-slate-50">
+                            <th scope="row" class="px-6 py-4 font-bold text-slate-900 whitespace-nowrap">经济影响</th>
+                            <td class="px-6 py-4">低</td>
+                            <td class="px-6 py-4 text-amber-600 font-medium">极高（急救/住院）</td>
+                            <td class="px-6 py-4">中高（持续咨询）</td>
+                            <td class="px-6 py-4">中等（维持性药物）</td>
+                        </tr>
+                        <tr class="bg-white hover:bg-slate-50">
+                            <th scope="row" class="px-6 py-4 font-bold text-slate-900 whitespace-nowrap">社会功能</th>
+                            <td class="px-6 py-4">开始下降</td>
+                            <td class="px-6 py-4">中断（休学/隔离）</td>
+                            <td class="px-6 py-4">尝试恢复/适应</td>
+                            <td class="px-6 py-4">重建新常态</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-2">本分析报告基于一般性心理健康发展规律生成，仅供参考。</p>
+            <p class="text-sm text-slate-500">每个孩子的成长轨迹都是独特的，请务必咨询专业医生获取个性化建议。</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- DATA STORE ---
+        // Represents the "Source Report" content organized by lifecycle stage
+        const lifecycleData = [
+            {
+                id: 0,
+                title: "1. 预警与发病期",
+                duration: "持续时间不定",
+                role: "观察者 (Observer) & 探索者",
+                description: "这是家长最容易感到困惑的阶段。孩子开始表现出行为异常（如成绩骤降、睡眠改变、社交退缩），但尚未确诊。家长常在'青春期叛逆'与'心理疾病'的判断间摇摆。",
+                emotionalTasks: [
+                    "克服'病耻感'与否认心理",
+                    "处理面对未知的不确定感与焦虑",
+                    "避免因孩子行为问题产生的家庭内部冲突"
+                ],
+                practicalTasks: [
+                    "详细记录孩子的行为、睡眠及饮食变化日志",
+                    "与学校老师沟通，了解孩子在校表现",
+                    "预约专业精神科医生进行首次评估"
+                ],
+                strategy: "此阶段最重要的是**不要急于归因**（如指责孩子懒惰）。保持开放沟通，表达关心而非评判。尽早寻求专业评估是防止病情恶化的关键。",
+                // Data for charts
+                stressLevel: 60,
+                childFunction: 80,
+                burden: [20, 30, 70, 40] // [Financial, Physical, Emotional, Social]
+            },
+            {
+                id: 1,
+                title: "2. 诊断与急性爆发期",
+                duration: "1-6 个月",
+                role: "危机管理者 (Crisis Manager)",
+                description: "确诊如同晴天霹雳，通常伴随着自伤、极度情绪波动等危机事件。这是家庭压力最大的时期，生活重心完全向医疗倾斜。",
+                emotionalTasks: [
+                    "接受诊断结果，哀悼'完美孩子'的期待",
+                    "应对极度的恐惧、内疚与无助感",
+                    "在危机中保持冷静，成为孩子的安全锚点"
+                ],
+                practicalTasks: [
+                    "处理紧急住院或高强度药物治疗事宜",
+                    "向学校申请休学或特殊支持",
+                    "建立家庭安全计划（移除危险物品）"
+                ],
+                strategy: "**生存模式**开启。此时不要考虑长远的学业或未来，首要任务是**生命安全**。家长需要轮替休息，避免一人崩溃导致家庭系统瘫痪。",
+                stressLevel: 95,
+                childFunction: 20,
+                burden: [90, 80, 100, 90]
+            },
+            {
+                id: 2,
+                title: "3. 治疗与稳定期",
+                duration: "6 个月 - 2 年",
+                role: "照护者 (Caregiver) & 督促者",
+                description: "病情逐渐受控，进入漫长的治疗拉锯战。药物副作用显现，孩子可能抗拒治疗。家长需要建立新的家庭常规。",
+                emotionalTasks: [
+                    "管理对治疗起效缓慢的失望感",
+                    "适应'病人照护者'的新身份",
+                    "重建受损的亲子信任关系"
+                ],
+                practicalTasks: [
+                    "监督服药依从性，记录副作用",
+                    "陪同定期心理咨询与复诊",
+                    "调整家庭环境，降低高情绪表达（High EE）"
+                ],
+                strategy: "重点从'救火'转向**建立规律**。耐心是此阶段的核心资源。学习专业的沟通技巧（如非暴力沟通）来减少家庭摩擦。",
+                stressLevel: 75,
+                childFunction: 50,
+                burden: [70, 60, 80, 60]
+            },
+            {
+                id: 3,
+                title: "4. 康复与社会复归期",
+                duration: "2 - 5 年",
+                role: "教练 (Coach) & 倡导者",
+                description: "症状明显改善，尝试复学或工作。面临的最大挑战是社会适应与病耻感。家长需从'全面包办'转向'辅助独立'。",
+                emotionalTasks: [
+                    "克服对复发的过度担忧（'直升机父母'倾向）",
+                    "鼓励孩子面对社交挫折",
+                    "关注家长自身的个人生活回归"
+                ],
+                practicalTasks: [
+                    "协助制定复学/复工的渐进计划",
+                    "与学校/雇主沟通合理的便利措施",
+                    "培养孩子的社交技能与压力应对技巧"
+                ],
+                strategy: "**适度放手**。允许孩子在安全范围内犯错。支持系统需扩展到医疗之外，包括学校老师、职业辅导员等。",
+                stressLevel: 50,
+                childFunction: 70,
+                burden: [50, 40, 60, 70]
+            },
+            {
+                id: 4,
+                title: "5. 长期管理与成年期",
+                duration: "终身",
+                role: "伙伴 (Partner) & 顾问",
+                description: "疾病成为生活的一部分，或是完全康复。重点在于成年后的独立生活、法律监护及长期财务规划。",
+                emotionalTasks: [
+                    "接受'慢性病管理'的常态",
+                    "处理'当我老了谁来照顾他'的终极焦虑",
+                    "尊重成年子女的自主权"
+                ],
+                practicalTasks: [
+                    "建立信托或长期财务保障机制",
+                    "完成向成人医疗体系的转介",
+                    "制定家长的养老与退出计划"
+                ],
+                strategy: "重点是**赋能**与**保障**。确保孩子拥有独立的社会支持网络，不再完全依赖父母。法律和财务规划比日常照护更重要。",
+                stressLevel: 40,
+                childFunction: 85,
+                burden: [40, 20, 40, 30]
+            }
+        ];
+
+        // --- STATE MANAGEMENT ---
+        let currentStageIndex = 0;
+        let trajectoryChartInstance = null;
+        let burdenChartInstance = null;
+
+        // --- DOM ELEMENTS ---
+        const timelineContainer = document.getElementById('timeline-container');
+        const stageTitle = document.getElementById('stage-title');
+        const stageDuration = document.getElementById('stage-duration');
+        const stageDescription = document.getElementById('stage-description');
+        const parentRole = document.getElementById('parent-role');
+        const emotionalList = document.getElementById('emotional-list');
+        const practicalList = document.getElementById('practical-list');
+        const strategyContent = document.getElementById('strategy-content');
+        const currentStageDisplay = document.getElementById('current-stage-display');
+        const burdenInsight = document.getElementById('burden-insight');
+        const stageHeaderCard = document.getElementById('stage-header-card');
+
+        // --- INITIALIZATION ---
+        function initApp() {
+            renderTimeline();
+            initCharts();
+            updateContent(0);
+        }
+
+        // --- TIMELINE RENDERER ---
+        function renderTimeline() {
+            lifecycleData.forEach((stage, index) => {
+                const node = document.createElement('div');
+                node.className = `timeline-node flex flex-col items-center gap-2 z-10 group w-32`;
+                node.onclick = () => updateContent(index);
+
+                // Circle Indicator
+                const circle = document.createElement('div');
+                circle.className = `w-10 h-10 rounded-full border-4 flex items-center justify-center bg-white transition-colors duration-300 ${index === 0 ? 'border-teal-500 text-teal-600' : 'border-stone-300 text-stone-400'}`;
+                circle.innerHTML = `<span class="font-bold text-sm">${index + 1}</span>`;
+                circle.id = `timeline-circle-${index}`;
+
+                // Label
+                const label = document.createElement('span');
+                label.className = `text-xs font-medium text-center transition-colors duration-300 ${index === 0 ? 'text-teal-800' : 'text-stone-500'}`;
+                label.innerText = stage.title.split(' ')[1]; // Extract short name
+                label.id = `timeline-label-${index}`;
+
+                node.appendChild(circle);
+                node.appendChild(label);
+                timelineContainer.appendChild(node);
+            });
+        }
+
+        // --- CORE LOGIC: UPDATE CONTENT ---
+        function updateContent(index) {
+            currentStageIndex = index;
+            const data = lifecycleData[index];
+
+            // 1. Update UI Styles for Timeline
+            lifecycleData.forEach((_, i) => {
+                const circle = document.getElementById(`timeline-circle-${i}`);
+                const label = document.getElementById(`timeline-label-${i}`);
+                const node = circle.parentElement;
+
+                if (i === index) {
+                    circle.className = "w-12 h-12 rounded-full border-4 border-teal-500 bg-teal-50 text-teal-700 flex items-center justify-center shadow-lg transform scale-110";
+                    label.className = "text-sm font-bold text-teal-800 mt-2";
+                    node.classList.add('active');
+                } else if (i < index) {
+                    // Past stages
+                    circle.className = "w-10 h-10 rounded-full border-4 border-teal-200 bg-teal-50 text-teal-300 flex items-center justify-center";
+                    label.className = "text-xs font-medium text-teal-300/80";
+                    node.classList.remove('active');
+                } else {
+                    // Future stages
+                    circle.className = "w-10 h-10 rounded-full border-4 border-stone-200 bg-white text-stone-300 flex items-center justify-center group-hover:border-stone-300";
+                    label.className = "text-xs font-medium text-stone-400 group-hover:text-stone-500";
+                    node.classList.remove('active');
+                }
+            });
+
+            // 2. Update Text Content with Animation Reset
+            animateElement(stageHeaderCard);
+            
+            stageTitle.innerText = data.title;
+            stageDuration.innerText = data.duration;
+            stageDescription.innerText = data.description;
+            parentRole.innerText = data.role;
+            currentStageDisplay.innerText = `当前阶段：${data.title.split(' ')[1]}`;
+
+            // Lists
+            emotionalList.innerHTML = data.emotionalTasks.map(item => `<li class="flex items-start"><span class="mr-2 mt-1 text-rose-400 text-[10px]">●</span>${item}</li>`).join('');
+            practicalList.innerHTML = data.practicalTasks.map(item => `<li class="flex items-start"><span class="mr-2 mt-1 text-blue-400 text-[10px]">●</span>${item}</li>`).join('');
+            strategyContent.innerHTML = data.strategy;
+
+            // 3. Update Charts
+            updateCharts(index);
+        }
+
+        function animateElement(element) {
+            element.classList.remove('fade-in');
+            void element.offsetWidth; // trigger reflow
+            element.classList.add('fade-in');
+        }
+
+        // --- CHART LOGIC ---
+        function initCharts() {
+            // Chart 1: Trajectory (Line Chart)
+            const ctx1 = document.getElementById('trajectoryChart').getContext('2d');
+            
+            // Prepare full dataset for background context
+            const allStress = lifecycleData.map(d => d.stressLevel);
+            const allFunc = lifecycleData.map(d => d.childFunction);
+            const labels = lifecycleData.map(d => d.title.split(' ')[1]);
+
+            trajectoryChartInstance = new Chart(ctx1, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: '家长压力指数',
+                            data: allStress,
+                            borderColor: 'rgb(251, 113, 133)', // Rose-400
+                            backgroundColor: 'rgba(251, 113, 133, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.4,
+                            pointRadius: 4,
+                            pointHoverRadius: 6,
+                            fill: true
+                        },
+                        {
+                            label: '孩子社会功能',
+                            data: allFunc,
+                            borderColor: 'rgb(45, 212, 191)', // Teal-400
+                            backgroundColor: 'rgba(45, 212, 191, 0.05)',
+                            borderWidth: 3,
+                            tension: 0.4,
+                            pointRadius: 4,
+                            pointHoverRadius: 6,
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                            titleColor: '#1e293b',
+                            bodyColor: '#475569',
+                            borderColor: '#e2e8f0',
+                            borderWidth: 1
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: { borderDash: [2, 4], color: '#f1f5f9' },
+                            ticks: { display: false } // Abstract scale
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+
+            // Chart 2: Burden (Radar Chart)
+            const ctx2 = document.getElementById('burdenChart').getContext('2d');
+            burdenChartInstance = new Chart(ctx2, {
+                type: 'radar',
+                data: {
+                    labels: ['经济负担', '身体损耗', '情绪压力', '社交隔离'],
+                    datasets: [{
+                        label: '当前阶段负担分布',
+                        data: lifecycleData[0].burden,
+                        fill: true,
+                        backgroundColor: 'rgba(94, 234, 212, 0.3)', // Teal-300
+                        borderColor: 'rgb(20, 184, 166)', // Teal-500
+                        pointBackgroundColor: 'rgb(13, 148, 136)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgb(13, 148, 136)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: '#e2e8f0' },
+                            grid: { color: '#f1f5f9' },
+                            pointLabels: {
+                                font: { size: 12, family: "'Noto Sans SC', sans-serif", weight: 'bold' },
+                                color: '#475569'
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 100,
+                            ticks: { display: false, stepSize: 25 }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+        }
+
+        function updateCharts(index) {
+            // Update Trajectory Chart Highlight
+            // We highlight the current point by making others smaller or changing opacity
+            // For simplicity in this demo, we just rely on the x-axis label or let the user see the whole curve.
+            // A visual indicator line could be added using Chartjs plugins, but here we will just update the title context.
+
+            // Update Burden Chart Data
+            const newData = lifecycleData[index].burden;
+            burdenChartInstance.data.datasets[0].data = newData;
+            
+            // Generate Insight Text based on max value
+            const burdens = ['经济负担', '身体损耗', '情绪压力', '社交隔离'];
+            const maxVal = Math.max(...newData);
+            const maxIndex = newData.indexOf(maxVal);
+            
+            let insightText = "";
+            if(index === 1) {
+                 insightText = "⚠️ 红色警报：由于危机处理，情绪压力与经济支出同时达到峰值。";
+            } else if (index === 4) {
+                 insightText = "✅ 压力逐渐平稳，但需警惕长期的照护疲劳与自身衰老问题。";
+            } else {
+                 insightText = `📊 当前数据显示，${burdens[maxIndex]}是此阶段最显著的挑战。`;
+            }
+            
+            burdenInsight.innerText = insightText;
+
+            burdenChartInstance.update();
+        }
+
+        // Start
+        window.addEventListener('load', initApp);
+
+    </script>
+</body>
+</html>
