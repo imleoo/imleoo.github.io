@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Title: Google DeepMind Team Disbanded: The First Casualty of the Large Model Era"
+title: "Google DeepMind Team Disbanded: The First Casualty of the Large Model Era"
 date: 2026-02-26 10:00:00 +0800
 categories: ["Artificial Intelligence", "Tech News", "Business"]
 description: "Google disbands DeepMind team, merging it into Google Brain, causing a 4.7% stock drop."

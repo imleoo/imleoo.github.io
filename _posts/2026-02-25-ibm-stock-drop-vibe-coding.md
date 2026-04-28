@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Title: IBM's Worst Stock Drop in 25 Years—All Because of These Vibe Coding Folks?"
+title: "IBM's Worst Stock Drop in 25 Years—All Because of These Vibe Coding Folks?"
 date: 2026-02-25 10:00:00 +0800
 categories: ["Finance", "Technology", "AI"]
 description: "IBM's stock plunges 12% after AI company Anthropic announces COBOL modernization tool."

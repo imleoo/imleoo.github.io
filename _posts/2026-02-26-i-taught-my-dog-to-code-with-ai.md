@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Title:** I Taught My Dog to Code with AI, and Then the World Went to Hell"
+title: "I Taught My Dog to Code with AI, and Then the World Went to Hell"
 date: 2026-02-26 10:00:00 +0800
 categories: ["AI", "Programming", "Humor"]
 description: "A humorous take on AI coding trends when even dogs can generate code with AI assistance."
