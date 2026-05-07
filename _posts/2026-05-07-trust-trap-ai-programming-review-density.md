@@ -1,0 +1,27 @@
+---
+layout: post
+title: "The Trust Trap in AI Programming: When Review Density Meets Ethical Vertigo"
+date: 2026-05-07 10:00:00 +0800
+categories: ["AI", "Ethics", "Programming"]
+description: "Exploring ethical challenges in AI programming workflows and review density."
+excerpt: "How AI tools blend development philosophies, raising ethical concerns."
+author: Leoo Bai
+---
+
+For the past three months, I’ve been observing how AI programming tools are reshaping developers’ workflows. But what truly unsettles me isn’t the rapid evolution of the tools themselves—it’s how we’re unconsciously blending two fundamentally different development philosophies, like cramming lab-grade precision instruments and carnival cotton candy machines into the same toolbox.  
+
+On the surface, this appears to be a technical advancement in "AI-generated code becoming more reliable." Yet it reveals a deeper cognitive rift: When *vibe coding*—an intuition-driven "good enough" approach—seeps into *agentic engineering*, where rigorous quality control is non-negotiable, what standards are we using to underpin code quality? Simon Willison’s recent blog post about his "uneasy discovery" hits this hidden cognitive shift squarely: As one of the first tech leaders to clearly distinguish these two modes, he now admits that in his production environment, Claude-generated code is bypassing line-by-line reviews.  
+
+Many might dismiss this as "trust increases because AI improves." But the real concern lies in the *mechanism* of trust-building. With human-delivered code, we trust the professional reputation and accountability behind it; with AI-generated code, trust rests solely on "it worked the last ten times." This gap might seem harmless in personal tooling, but when it spills into production systems, it’s like replacing engineering certifications with supermarket loyalty cards—superficially both are "trust credentials," but their actual safeguards are worlds apart.  
+
+**Step one** is recognizing the inherent divide between *vibe coding* and *agentic engineering*. As Simon noted last year in *Not All AI-Assisted Programming Is Vibe Coding*, the former is outcome-driven rapid prototyping (users may not understand the code, only the result), while the latter involves professionals using AI to amplify engineering rigor, with outputs still held to standards like security and maintainability. This distinction was clear—until Claude began reliably producing entire API endpoints complete with SQL queries, JSON serialization, and unit tests.  
+
+**Step two** is understanding the dynamics of trust migration. The most revealing part is Simon’s mention of "organizational memory": With human teams, we treat deliverables as semi-black boxes, diving deep only when issues arise. But applying the same approach to AI agents creates ethical vertigo—the comfort of "don’t review what isn’t broken" clashes with the reality that AI has no professional reputation to uphold. This tension peaks with high-stability tools like Claude: When error rates dip below a threshold, rationally we *know* we should review every line, but cost-benefit analysis quietly warps behavior.  
+
+The real crux is **risk allocation**. As discussed on the *High Leverage* podcast, Simon’s core anxiety isn’t code quality per se, but the blurring of accountability: Human errors carry career consequences; AI failures have no "lessons learned." This raises a fundamental question—are we creating a new kind of technical debt? One that lacks both the clear ownership of handcrafted code and the community-backed safeguards of traditional libraries, instead dangling on the fragile assumption of "model reliability."  
+
+Based on current cases, my tentative conclusion is this: The ethical line in AI programming is shifting from "can it work?" to "dare we not review?" When Claude’s accuracy for standard patterns (e.g., CRUD APIs) reaches a certain threshold, the greatest risk isn’t tool failure—it’s developers treating it like mature open-source libraries, reducing review density below what its accountability structure can support. This demands new review strategies: not blanket approval or rejection, but dynamic resource allocation—like security engineers—based on a module’s criticality, replacement cost, and failure impact.  
+
+The most common misjudgment is equating "no issues found" with "no issues exist." Simon’s repeated JSON endpoint example shows AI excels at templated tasks—precisely the areas unit tests cover easily. But real production risks lurk in edge cases, error handling, and system interactions—the "non-standard" zones where models are most overconfident. This structural mismatch means even if AI earns trust in 90% of scenarios, the remaining 10% blind spots require human oversight with strategies *fundamentally different* from traditional code reviews.  
+
+At its core, this is about redefining software quality control. As AI handles initial implementations, human engineers must shift from "writing code" to "defining the constraints code must meet." Like Simon’s engineering manager perspective: The priority isn’t personally vetting every line, but establishing clear acceptance criteria and response protocols. For individual developers, the takeaway isn’t agonizing over whether to review AI code—it’s asking, *Have I built a robust enough validation framework?* In the AI era, the scarcest resource isn’t coding productivity, but the judgment to decide *what code is worth producing.*
