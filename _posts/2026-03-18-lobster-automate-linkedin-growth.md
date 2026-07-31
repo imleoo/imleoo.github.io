@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I Used a "Lobster" to Automate My LinkedIn for 28 Days and Achieved 7,000%+ Growth (Real Backend Data)"
+title: "I Used a \"Lobster\" to Automate My LinkedIn for 28 Days and Achieved 7,000%+ Growth (Real Backend Data)"
 date: 2026-03-18 10:00:00 +0800
 categories: ["LinkedIn", "Automation", "Growth Hacking"]
 description: "How a 'lobster' experiment drove 7,000%+ LinkedIn growth in 28 days (real data)."

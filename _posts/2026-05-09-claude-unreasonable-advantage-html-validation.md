@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Claude's "Unreasonable" Advantage in Handling HTML and the Validation Framework"
+title: "Claude's \"Unreasonable\" Advantage in Handling HTML and the Validation Framework"
 date: 2026-05-09 10:00:00 +0800
 categories: ["AI", "Programming", "HTML"]
 description: "Exploring Claude's superior HTML handling and the overlooked validation framework behind its effectiveness."

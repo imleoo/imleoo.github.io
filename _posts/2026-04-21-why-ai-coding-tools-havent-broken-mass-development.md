@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why AI Coding Tools Haven't Broken the "Mass Development" Barrier"
+title: "Why AI Coding Tools Haven't Broken the \"Mass Development\" Barrier"
 date: 2026-04-21 10:00:00 +0800
 categories: ["AI", "Software Development", "Technology"]
 description: "Exploring why AI coding tools haven't yet enabled mass development despite their popularity."
