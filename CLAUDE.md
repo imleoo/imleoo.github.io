@@ -54,6 +54,8 @@ jekyll build
 
 When writing, editing, or reviewing a blog post, use the `wechat-article` skill (`.agents/skills/wechat-article/`) — it has the style profile, AI-smell checklist, and scan script. See `AGENTS.md` for the full writing guidelines.
 
+When publishing a finished post to 腾讯云开发者社区 or 微信公众号, use the `publish-article` skill (`.agents/skills/publish-article/`) — it covers the Tencent Cloud browser-automation flow and the WeChat content-prep-only flow (mp.weixin.qq.com is blocked from automation by the Claude in Chrome extension itself).
+
 ### Assets & Styling
 - **CSS**: `assets/css/main.css` - Custom CSS with CSS variables, dark mode support, and responsive design
 - **JavaScript**: `assets/js/main.js` - Interactive features including scroll animations, smooth scrolling, and mobile menu
