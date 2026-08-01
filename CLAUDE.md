@@ -49,8 +49,10 @@ jekyll build
 
 ### Content Organization
 - **Main Pages**: All main pages are in the root directory (index.md, about.md, experience.md, etc.)
-- **Blog Posts**: Stored in `_posts/` directory (if any exist)
+- **Blog Posts**: Stored in `_posts/` directory, mostly republished WeChat articles (公众号)
 - **Navigation**: Configured in `_config.yml` under the `navigation.main` array
+
+When writing, editing, or reviewing a blog post, use the `wechat-article` skill (`.agents/skills/wechat-article/`) — it has the style profile, AI-smell checklist, and scan script. See `AGENTS.md` for the full writing guidelines.
 
 ### Assets & Styling
 - **CSS**: `assets/css/main.css` - Custom CSS with CSS variables, dark mode support, and responsive design
