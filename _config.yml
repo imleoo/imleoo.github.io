@@ -33,6 +33,10 @@ twitter_username: leoobai
 google_analytics:
   id: G-4ZEGWF8VV4
 
+# Microsoft Clarity (heatmap + session replay)
+microsoft_clarity:
+  id: "xxf8qrzsw3"
+
 # Site settings
 paginate: 10
 paginate_path: "/blog/page:num/"
