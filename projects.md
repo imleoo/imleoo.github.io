@@ -150,6 +150,9 @@ An article series on [imleoo.github.io/blog](https://imleoo.github.io/blog/) cov
 
 ## Open Source & Community Contributions
 
+### Model Compression - Tencent/AngelSlim
+- **Merged Contributor**: fixed device-consistency bugs in AWQ low-memory quantization mode (submodules ending up on different devices after `apply_scale`/`apply_clip`), including a cleanup routine for accelerate hooks
+
 ### Technical Standards Development
 - **Internet TV Browser Standards**: Led development of industry standards adopted by multiple manufacturers
 - **TV OS Reference Architecture**: Contributions to national standards for smart television
