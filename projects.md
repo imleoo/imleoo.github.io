@@ -2,10 +2,41 @@
 layout: page
 title: "Projects"
 permalink: /projects/
-description: "Discover Leoo Bai's key projects including AI-powered SEO platforms, financial risk modeling systems, large-scale video platforms, and innovative technology solutions."
+description: "Discover Leoo Bai's work in AI/Agent Engineering — the DDAD framework and ModelTesting — plus AI-powered SEO platforms, financial risk modeling systems, large-scale video platforms, and other technology achievements."
 ---
 
 # Key Projects & Achievements
+
+## AI/Agent Engineering (Current Focus)
+
+### 📖 DDAD - Document-Driven AI Development
+*Independent Research & Writing* | *2025 - Present*
+
+**Overview:** A methodology and book for team-scale human-AI collaboration in the agentic coding era, published online at [imleoo.github.io/claude-code-in-teams](https://imleoo.github.io/claude-code-in-teams/).
+
+**Core Principles:**
+- **Spec as Interface**: structured specs as the precise "collaboration contract" between humans and AI
+- **Knowledge as Code**: architecture decisions, coding standards, and business rules documented so AI carries full project memory
+- **Collaboration as Orchestration**: `CLAUDE.md` defines the protocol, Commands drive reuse, Hooks enforce constraints
+
+**Framework includes:** a five-level team collaboration maturity model, a documentation infrastructure template, and a risk-tiered policy for how much autonomy to grant AI on different classes of tasks.
+
+### 🧪 ModelTesting - Multi-Vendor LLM Testing Platform
+*Independent Project* | *2025 - Present*
+
+**Overview:** A functional and load-testing platform for LLM integrations, covering OpenAI-compatible channels.
+
+**Key Components:**
+- Functional test-case engine and load/stress-testing engine
+- Web console for running and reviewing acceptance tests
+- Coverage across multiple LLM vendors and API-compatible providers
+
+### ✍️ Writing: Agentic Engineering & AI Code Review
+*Ongoing* | *2025 - Present*
+
+An article series on [imleoo.github.io/blog](https://imleoo.github.io/blog/) covering agentic coding tools (Claude Code), AI code review governance and technical debt, and the shift from "vibe coding" to disciplined, spec-driven AI-assisted delivery.
+
+---
 
 ## Major Technical Achievements
 

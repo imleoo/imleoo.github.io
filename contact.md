@@ -2,12 +2,12 @@
 layout: page
 title: "Contact"
 permalink: /contact/
-description: "Get in touch with Leoo Bai for business inquiries, collaboration opportunities, consulting services, and professional networking."
+description: "Get in touch with Leoo Bai for AI/Agent Engineering consulting, business inquiries, collaboration opportunities, and professional networking."
 ---
 
 # Get In Touch
 
-I'm always excited to connect with fellow technology leaders, entrepreneurs, and potential collaborators.
+I'm currently focused on **AI/Agent Engineering** — research, writing, and consulting on agentic coding tools and the DDAD framework — and always excited to connect with fellow technology leaders, entrepreneurs, and potential collaborators.
 
 ## Contact Information
 
@@ -24,6 +24,12 @@ I'm always excited to connect with fellow technology leaders, entrepreneurs, and
 ## Collaboration Opportunities
 
 I'm particularly interested in collaborating on:
+
+### AI/Agent Engineering
+- **Agentic Development Workflows**: adopting Claude Code and similar agentic coding tools in team settings
+- **DDAD Adoption**: applying the Document-Driven AI Development framework (specs, `CLAUDE.md`, Commands, Hooks) to your team
+- **AI Code Review Governance**: quality standards and technical-debt controls for AI-generated code
+- **LLM Testing & Evaluation**: multi-vendor functional and load testing, in the spirit of the [ModelTesting](https://github.com/imleoo/ModelTesting) project
 
 ### AI & Machine Learning Projects
 - **Risk Assessment & Fraud Detection** systems for financial services
@@ -52,6 +58,12 @@ I'm particularly interested in collaborating on:
 ## Consulting & Advisory Services
 
 With extensive experience in technology leadership, I offer consulting services in:
+
+### AI/Agent Engineering
+- **Agentic Workflow Adoption**: rolling out Claude Code and similar agentic coding tools across a team
+- **DDAD Implementation**: setting up spec-driven documentation (`CLAUDE.md`, Commands, Hooks) for human-AI collaboration
+- **AI Code Review Standards**: governance and quality gates for AI-generated code
+- **LLM Evaluation**: functional and load testing across multiple model vendors
 
 ### Technology Strategy
 - **CTO Advisory**: Strategic technology planning and roadmap development
@@ -180,6 +192,7 @@ With extensive experience in technology leadership, I offer consulting services 
 
 I'm available for speaking engagements on topics including:
 
+- **AI/Agent Engineering**: Agentic coding tools, the DDAD framework, and disciplined AI-assisted software delivery
 - **AI in Financial Services**: Risk assessment, fraud detection, and compliance
 - **Big Data Architecture**: Building scalable data platforms for enterprise
 - **Technology Leadership**: Managing technical teams and driving innovation

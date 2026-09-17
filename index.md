@@ -6,8 +6,8 @@ layout: home
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">Leoo Bai</h1>
-    <p class="hero-subtitle">Senior Technology Executive & AI Specialist</p>
-    <p class="hero-description">Founder of AiSEO.icu | 10+ years in AI, Big Data & Cloud Computing</p>
+    <p class="hero-subtitle">AI/Agent Engineering Researcher & Writer</p>
+    <p class="hero-description">Author of DDAD | Ex-CTO (130M+ users), 10+ yrs in AI & Big Data | Founder of AiSEO.icu</p>
     <div class="hero-buttons">
       <a href="#contact" class="btn-primary">Get In Touch</a>
       <a href="/experience/" class="btn-secondary">View Experience</a>
@@ -47,6 +47,7 @@ layout: home
   </div>
   
   <div class="skills-container">
+    <div class="skill-tag">🧠 AI/Agent Engineering</div>
     <div class="skill-tag">🤖 AI & ML</div>
     <div class="skill-tag">📊 Big Data</div>
     <div class="skill-tag">☁️ Cloud Arch</div>
@@ -80,8 +81,8 @@ layout: home
 
 <!-- Current Focus Tagline -->
 <div class="container" style="padding: 2rem 2rem; text-align: center; background: var(--bg-secondary);">
-  <h2 class="section-title">🚀 Currently Building AiSEO.icu</h2>
-  <p class="section-subtitle">Next-generation AI-powered SEO infrastructure for global businesses</p>
+  <h2 class="section-title">🚀 Currently: AI/Agent Engineering</h2>
+  <p class="section-subtitle">Author of the DDAD (Document-Driven AI Development) framework, building ModelTesting (a multi-vendor LLM testing platform), and writing on agentic engineering — alongside founding AiSEO.icu</p>
 </div>
 
 <!-- Action Bar -->

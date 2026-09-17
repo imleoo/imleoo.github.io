@@ -2,12 +2,26 @@
 layout: page
 title: "Experience"
 permalink: /experience/
-description: "Explore Leoo Bai's professional journey including leadership roles at major tech companies, entrepreneurial ventures, and technical expertise in AI, big data, and media technology."
+description: "Explore Leoo Bai's work in AI/Agent Engineering (author of the DDAD framework), leadership roles at major tech companies, entrepreneurial ventures, and expertise in AI, big data, and media technology."
 ---
 
 # Professional Experience
 
 ## Current Roles
+
+### Independent Researcher, Writer & Consultant — AI/Agent Engineering
+*2025 - Present*
+
+Focused on how agentic coding tools like Claude Code are reshaping software development and knowledge work.
+
+**Key Highlights:**
+- **DDAD Framework**: Author of **DDAD (Document-Driven AI Development)**, a methodology for team-scale human-AI collaboration where `CLAUDE.md` defines the protocol, Commands drive reuse, and Hooks enforce constraints. Published as a book/site.
+- **ModelTesting**: Building a multi-vendor LLM functional & load-testing platform (test-case engine + stress engine + web console) covering OpenAI-compatible channels.
+- **Writing**: Ongoing article series on agentic engineering, AI code review governance, and the shift from "vibe coding" to disciplined AI-assisted delivery.
+- **Consulting**: Advising teams on adopting agentic development workflows and AI-assisted engineering practices.
+
+> [!TIP]
+> See the [DDAD framework](https://imleoo.github.io/claude-code-in-teams/), [ModelTesting](https://github.com/imleoo/ModelTesting), and recent writing on the [Blog](/blog/).
 
 ### Founder & CEO
 **Technology Innovation Company** | *2019 - Present*

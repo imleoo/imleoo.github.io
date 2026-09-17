@@ -2,12 +2,14 @@
 layout: page
 title: "About"
 permalink: /about/
-description: "Learn about Leoo Bai's professional journey, leadership philosophy, and expertise in AI, big data, and technology management."
+description: "Learn about Leoo Bai's work in AI/Agent Engineering, author of the DDAD framework, and his professional journey through AI, big data, and technology leadership."
 ---
 
 ## Who I Am
 
-With over 10 years at the intersection of cutting-edge technology and practical business applications, my journey has taken me from early protocol development to today's AI-driven solutions. I believe in building technology that solves real-world problems while pushing the boundaries of what's possible.
+I'm currently an independent researcher, writer, and consultant focused on **AI/Agent Engineering** — how agentic coding tools like Claude Code are reshaping the way software (and knowledge work more broadly) gets built. I'm the author of the **DDAD (Document-Driven AI Development)** framework and write an ongoing series on agentic engineering and AI code review governance.
+
+This focus builds on over 10 years at the intersection of cutting-edge technology and practical business applications — a journey that took me from early protocol development, through CTO roles running platforms with 130M+ users, to founding AiSEO.icu. I believe in building technology that solves real-world problems while pushing the boundaries of what's possible.
 
 ## How I Lead
 
